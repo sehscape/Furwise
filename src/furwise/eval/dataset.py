@@ -49,6 +49,12 @@ class Question:
         return self.expect in ("answer", "restrict")
 
 
+def faithfulness_sample(path: Path = EVAL_DIR / "questions.yaml") -> set[str]:
+    """Question ids scored for RAGAS faithfulness (empty set = all questions)."""
+    raw = yaml.safe_load(path.read_text("utf-8"))
+    return set(raw.get("faithfulness_sample") or [])
+
+
 def load(path: Path = EVAL_DIR / "questions.yaml") -> list[Question]:
     raw = yaml.safe_load(path.read_text("utf-8"))
     out = []

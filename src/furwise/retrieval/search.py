@@ -12,6 +12,7 @@ size (a few thousand chunks).
 
 from __future__ import annotations
 
+import os
 import time
 from dataclasses import dataclass, field
 
@@ -25,8 +26,8 @@ OVERFETCH = 120  # candidates pulled before filters are applied
 # 12 fused candidates, with inputs capped at 320 tokens. On a 20-passage sample that
 # cap gave the same top 5 as the full 512 tokens at half the time; int8 quantization
 # was faster still but reordered the top 5, so it was not used.
-RERANK_POOL = 12
-RERANK_MAX_TOKENS = 320
+RERANK_POOL = int(os.getenv("FURWISE_RERANK_POOL", "12"))
+RERANK_MAX_TOKENS = int(os.getenv("FURWISE_RERANK_MAX_TOKENS", "320"))
 
 
 @dataclass

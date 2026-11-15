@@ -13,6 +13,12 @@
 #          decline   outside the sources: must not answer
 # species: the animal the question is about (dog / cat), used for species mix-up checks.
 
+# RAGAS faithfulness needs two LLM-judge calls per answer, and the judge runs on a free
+# tier with a daily token cap. It is therefore scored on this fixed, stratified sample
+# (the same 24 questions for every stage). All other metrics use every question.
+faithfulness_sample: [L01, L03, L05, L09, L12, L13, L18, L20, L24, L28,
+                      T01, T02, T05, T06, T16, N01, N03, N08, N11, P02, P04, P06, E01, E08]
+
 questions:
   # ------------------------------------------------------------------ label facts
   - id: L01

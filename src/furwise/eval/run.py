@@ -60,9 +60,11 @@ def run(
 ) -> dict:
     from furwise.eval.ragas_eval import FreeJudge, RagasScorer, answer_claims
     from furwise.pipeline import STAGES, Pipeline
+    from furwise.retrieval.search import RERANK_MAX_TOKENS, RERANK_POOL
 
     corpus = get_corpus()
     questions = dataset.load()[:limit]
+    sample = dataset.faithfulness_sample()
     problems = dataset.validate(questions, corpus)
     if problems:
         raise SystemExit("test set problems:\n" + "\n".join(problems))
@@ -113,7 +115,14 @@ def run(
                     )
                 )
             claims = answer_claims(answer or "")
-            if scorer.faithfulness is not None and contexts and claims and not row.get("declined"):
+            judged = not sample or q.id in sample
+            if (
+                scorer.faithfulness is not None
+                and judged
+                and contexts
+                and claims
+                and not row.get("declined")
+            ):
                 try:
                     row["faithfulness"] = asyncio.run(
                         scorer.faithfulness_score(q.question, claims, [_text(c) for c in contexts])
@@ -146,6 +155,10 @@ def run(
             "mode": "retrieval-only" if retrieval_only else "full",
             "generator": None if retrieval_only else pipe.generator.client.config.label,
             "judge": scorer.judge.label if scorer.judge else None,
+            "faithfulness_sample": len(sample) or len(questions),
+            "rerank": {"pool": RERANK_POOL, "max_tokens": RERANK_MAX_TOKENS}
+            if STAGES[stage]["rerank"]
+            else None,
             "date": datetime.now().strftime("%Y-%m-%d %H:%M"),
             "run_dir": str(out_dir.relative_to(ROOT)).replace("\\", "/"),
         }

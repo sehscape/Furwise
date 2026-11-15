@@ -1,0 +1,35 @@
+{
+  "labels": 165,
+  "drug_groups": 106,
+  "plants": 987,
+  "plants_toxic_dog": 416,
+  "plants_toxic_cat": 423,
+  "chunks": 3012,
+  "label_chunks": 2025,
+  "chunks_by_section": {
+    "plant_toxicity": 987,
+    "adverse_reactions": 388,
+    "dosage": 371,
+    "overdose_safety": 367,
+    "precautions": 213,
+    "indications": 184,
+    "contraindications": 131,
+    "warnings": 124,
+    "label_header": 122,
+    "owner_info": 110,
+    "drug_interactions": 15
+  },
+  "labels_by_species": {
+    "dog": 95,
+    "cat+dog": 42,
+    "cat": 28
+  },
+  "labels_restricting_other_species": 79,
+  "species_conflicts": 5,
+  "label_selection": {
+    "kept": 165,
+    "duplicate": 162,
+    "no dog/cat target": 75,
+    "group cap": 14
+  }
+}

@@ -1,0 +1,988 @@
+slug,name,toxic_to_dog,toxic_to_cat,url
+acorn-squash,Acorn Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/acorn-squash
+adam-and-eve,Adam-and-Eve,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/adam-and-eve
+african-daisy,African Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/african-daisy
+african-violet,African Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/african-violet
+african-wonder-tree,African Wonder Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/african-wonder-tree
+algaroba,Algaroba,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/algaroba
+alocasia,Alocasia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/alocasia
+aloe,Aloe,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aloe
+aluminum-plant,Aluminum Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aluminum-plant
+alumroot,Alumroot,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/alumroot
+alyssum,Alyssum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/alyssum
+amaryllis,Amaryllis,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/amaryllis
+ambrosia-mexicana,Ambrosia Mexicana,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ambrosia-mexicana
+american-bittersweet,American Bittersweet,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/american-bittersweet
+american-holly,American Holly,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/american-holly
+american-mandrake,American Mandrake,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/american-mandrake
+american-rubber-plant,American Rubber Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/american-rubber-plant
+american-yew,American Yew,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/american-yew
+amur-maple,Amur Maple,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/amur-maple
+andromeda-japonica,Andromeda Japonica,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/andromeda-japonica
+angelica-tree,Angelica Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/angelica-tree
+anthericum-comosum,Anthericum Comosum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/anthericum-comosum
+antirrhinum-multiflorum,Antirrhinum Multiflorum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/antirrhinum-multiflorum
+apple,Apple,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/apple
+apricot,Apricot,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/apricot
+arabian-gentian,Arabian Gentian,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/arabian-gentian
+areca-palm,Areca Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/areca-palm
+aregelia,Aregelia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aregelia
+arrow-head-vine,Arrow-Head Vine,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/arrow-head-vine
+artillery-plant,Artillery Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/artillery-plant
+arum,Arum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/arum
+arum-lily,Arum Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/arum-lily
+asian-lily,Asian Lily,,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/asian-lily
+asparagus-fern,Asparagus Fern,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/asparagus-fern
+aspidium-falcatum,Aspidium falcatum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aspidium-falcatum
+australian-ivy-palm,Australian Ivy Palm,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/australian-ivy-palm
+australian-nut,Australian Nut,True,,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/australian-nut
+australian-pine,Australian Pine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/australian-pine
+autumn-crocus,Autumn Crocus,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/autumn-crocus
+autumn-olive,Autumn Olive,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/autumn-olive
+azalea,Azalea,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/azalea
+baby-doll-ti-plant,Baby Doll Ti Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/baby-doll-ti-plant
+baby-rubber-plant,Baby Rubber Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/baby-rubber-plant
+babys-breath,Baby’s Breath,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/babys-breath
+babys-tears,Baby’s Tears,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/babys-tears
+bachelors-buttons,Bachelors Buttons,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bachelors-buttons
+ball-fern,Ball Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ball-fern
+bamboo,Bamboo,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bamboo
+bamboo-palm,Bamboo Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bamboo-palm
+bamboo-vine,Bamboo Vine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bamboo-vine
+banana,Banana,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/banana
+banana-squash,Banana Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/banana-squash
+barbados-aloe,Barbados Aloe,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/barbados-aloe
+barbados-lily,Barbados Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/barbados-lily
+barbados-pride,Barbados Pride,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/barbados-pride
+barbados-pride-2,Barbados Pride 2,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/barbados-pride-2
+barberton-daisy,Barberton Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/barberton-daisy
+barnabys-thistle,Barnaby's Thistle,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/barnabys-thistle
+basil,Basil,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/basil
+bay-laurel,Bay Laurel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bay-laurel
+bead-tree,Bead Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bead-tree
+beets,Beets,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/beets
+begonia,Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia
+begonia-climbing,"Begonia, Climbing",False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia-climbing
+begonia-trailing,"Begonia, Trailing",False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/begonia-trailing
+belmore-sentry-palm,Belmore Sentry Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/belmore-sentry-palm
+bergamot-orange,Bergamot Orange,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bergamot-orange
+big-shagbark-hickory,Big Shagbark Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/big-shagbark-hickory
+big-shellbark-hickory,Big Shellbark Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/big-shellbark-hickory
+bird-paradise,Bird of Paradise,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bird-paradise
+bird-paradise-2,Bird of Paradise 2,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bird-paradise-2
+bird-paradise-flower,Bird of Paradise Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bird-paradise-flower
+birds-tongue-flower,Bird's Tongue Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/birds-tongue-flower
+bishops-weed,Bishop’s Weed,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bishops-weed
+bitter-pecan,Bitter Pecan,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bitter-pecan
+bitter-root,Bitter Root,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bitter-root
+bitternut,Bitternut,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bitternut
+black-calla,Black Calla,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-calla
+black-cherry,Black Cherry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-cherry
+black-haw,Black Haw,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-haw
+black-hawthorn,Black Hawthorn,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-hawthorn
+black-laurel,Black Laurel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-laurel
+black-nightshade,Black Nightshade,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-nightshade
+black-walnut,Black Walnut,True,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/black-walnut
+blackjack-pine,Blackjack Pine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blackjack-pine
+blaspheme-vine,Blaspheme Vine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blaspheme-vine
+bloodleaf,Bloodleaf,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bloodleaf
+blooming-sally,Blooming Sally,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blooming-sally
+blue-bead,Blue Bead,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-bead
+blue-daisy,Blue Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-daisy
+blue-dicks,Blue-dicks,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-dicks
+blue-dicks-2,Blue-dicks 2,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-dicks-2
+blue-dicks-3,Blue-dicks 3,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-dicks-3
+blue-echeveria,Blue Echeveria,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-echeveria
+blue-eyed-african-daisy,Blue-eyed African Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-eyed-african-daisy
+blue-eyed-daisy,Blue Eyed Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blue-eyed-daisy
+bluebottle,Bluebottle,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bluebottle
+blunt-leaf-peperomia,Blunt Leaf Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blunt-leaf-peperomia
+blushing-bromeliad,Blushing Bromeliad,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/blushing-bromeliad
+bobbins,Bobbins,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bobbins
+bog-laurel,Bog Laurel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bog-laurel
+bold-sword-fern,Bold Sword Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bold-sword-fern
+borage,Borage,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/borage
+boston-fern,Boston Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern
+bottle-palm,Bottle Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bottle-palm
+bottle-palm-2,Bottle Palm 2,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bottle-palm-2
+bottlebrush,Bottlebrush,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bottlebrush
+boxwood,Boxwood,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boxwood
+branching-ivy,Branching Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/branching-ivy
+brazilian-orchid,Brazilian Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/brazilian-orchid
+brazilwood,Brazilwood,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/brazilwood
+bread-and-butter-plant,Bread and Butter Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bread-and-butter-plant
+brides-bonnet,Bride's Bonnet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/brides-bonnet
+bristly-greenbrier,Bristly Greenbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bristly-greenbrier
+brodiaea-pulchella,Brodiaea Pulchella,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/brodiaea-pulchella
+broom-hickory,Broom Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/broom-hickory
+brunfelsia,Brunfelsia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/brunfelsia
+buckeye,Buckeye,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/buckeye
+buckwheat,Buckwheat,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/buckwheat
+buddhist-pine,Buddhist Pine,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/buddhist-pine
+bullbrier,Bullbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bullbrier
+bur-gourd,Bur Gourd,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/bur-gourd
+burning-bush,Burning Bush,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/burning-bush
+burros-tail,Burro's Tail,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/burros-tail
+buttercup,Buttercup,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/buttercup
+buttercup-squash,Buttercup Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/buttercup-squash
+butterfly-ginger,Butterfly Ginger,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/butterfly-ginger
+butterfly-iris,Butterfly Iris,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/butterfly-iris
+butternut-squash,Butternut Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/butternut-squash
+buzzy-lizzie,Buzzy Lizzie,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/buzzy-lizzie
+caeroba,Caeroba,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/caeroba
+caladium,Caladium,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/caladium
+calamondin-orange,Calamondin Orange,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calamondin-orange
+calathea,Calathea,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calathea
+calathea-lancifolia-2,Calathea Lancifolia 2,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calathea-lancifolia-2
+calathea-lancifolia-3,Calathea Lancifolia 3,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calathea-lancifolia-3
+california-ivy,California Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/california-ivy
+california-pitcher-plant,California Pitcher Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/california-pitcher-plant
+calla-lily,Calla Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calla-lily
+callistemon-brachyandrus,Callistemon Brachyandrus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/callistemon-brachyandrus
+callistemon-citrinus,Callistemon citrinus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/callistemon-citrinus
+callistemon-viminalis,Callistemon viminalis,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/callistemon-viminalis
+calochortus-nuttalli,Calochortus nuttalli,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calochortus-nuttalli
+camellia,Camellia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/camellia
+canada-hemlock,Canada Hemlock,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/canada-hemlock
+canary-date-palm,Canary Date Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/canary-date-palm
+candle-plant,Candle Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/candle-plant
+candycorn-plant,Candycorn Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/candycorn-plant
+cane-palm,Cane Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cane-palm
+canna,Canna,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/canna
+canna-lily,Canna Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/canna-lily
+canterbury-bell,Canterbury-bell,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/canterbury-bell
+cape-jasmine,Cape Jasmine,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cape-jasmine
+cape-marigold,Cape Marigold,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cape-marigold
+cape-primrose,Cape Primrose,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cape-primrose
+caraway,Caraway,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/caraway
+cardboard-cycad,Cardboard Cycad,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cardboard-cycad
+cardboard-palm,Cardboard Palm,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cardboard-palm
+cardinal-flower,Cardinal Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cardinal-flower
+carnation,Carnation,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carnation
+carob,Carob,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carob
+caroba,Caroba,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/caroba
+carolina-hemlock,Carolina Hemlock,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carolina-hemlock
+carrion-flower,Carrion Flower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carrion-flower
+carrion-flower-2,Carrion Flower 2,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carrion-flower-2
+carrot-fern,Carrot Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carrot-fern
+carrot-flower,Carrot Flower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carrot-flower
+casaba-melon,Casaba Melon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/casaba-melon
+cast-iron-plant,Cast Iron Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cast-iron-plant
+castor-bean-plant,Castor Bean Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/castor-bean-plant
+cat-brier,Cat Brier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cat-brier
+cat-ear,Cat Ear,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cat-ear
+catnip,Catnip,,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/catnip
+cattleya-labiata,Cattleya Labiata,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cattleya-labiata
+celosia-globosa,Celosia Globosa,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/celosia-globosa
+celosia-plumosa,Celosia Plumosa,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/celosia-plumosa
+celosia-spicata,Celosia Spicata,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/celosia-spicata
+ceriman,Ceriman,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ceriman
+chamaedorea,Chamaedorea,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chamaedorea
+chamomile,Chamomile,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chamomile
+chandelier-plant,Chandelier Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chandelier-plant
+chaparral,Chaparral,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chaparral
+charming-dieffenbachia,Charming Dieffenbachia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/charming-dieffenbachia
+cherry,Cherry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cherry
+chervil,Chervil,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chervil
+chestnut,Chestnut,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chestnut
+chicken-gizzard,Chicken-Gizzard,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chicken-gizzard
+chickens-and-hens,Chickens and Hens,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chickens-and-hens
+chin-lao-shu,Chin-lao-shu,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chin-lao-shu
+china-aster,China Aster,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/china-aster
+china-root,China Root,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/china-root
+chinaberry-tree,Chinaberry Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chinaberry-tree
+chinese-evergreen,Chinese Evergreen,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chinese-evergreen
+chinese-jade,Chinese Jade,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chinese-jade
+chinese-plumbago,Chinese Plumbago,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chinese-plumbago
+chives,Chives,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chives
+chlorophytum,Chlorophytum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chlorophytum
+chlorophytum-bichetti,Chlorophytum bichetti,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chlorophytum-bichetti
+chocolate-soldier,Chocolate Soldier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chocolate-soldier
+choke-cherry,Choke Cherry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/choke-cherry
+christmas-cactus,Christmas Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-cactus
+christmas-dagger,Christmas Dagger,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-dagger
+christmas-orchid,Christmas Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-orchid
+christmas-palm,Christmas Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-palm
+christmas-rose,Christmas Rose,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/christmas-rose
+chrysanthemum,Chrysanthemum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chrysanthemum
+cilantro,Cilantro,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cilantro
+cinnamon,Cinnamon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cinnamon
+cinquefoil,Cinquefoil,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cinquefoil
+cirrhopetalum,Cirrhopetalum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cirrhopetalum
+clearweed,Clearweed,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/clearweed
+clematis,Clematis,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/clematis
+cliff-brake,Cliff Brake,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cliff-brake
+climbing-bittersweet,Climbing Bittersweet,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/climbing-bittersweet
+climbing-lily,Climbing Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/climbing-lily
+climbing-nightshade,Climbing Nightshade,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/climbing-nightshade
+clivia-lily,Clivia Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/clivia-lily
+club-moss,Club Moss,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/club-moss
+clusia-rosea,Clusia Rosea,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/clusia-rosea
+cocks-comb,Cocks Comb,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cocks-comb
+cocktail-orchid,Cocktail Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cocktail-orchid
+coffee-tree,Coffee Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coffee-tree
+coleus,Coleus,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coleus
+collinia-elegans,Collinia Elegans,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/collinia-elegans
+common-camellia,Common Camellia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-camellia
+common-catbrier,Common Catbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-catbrier
+common-garden-canna,Common Garden Canna,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-garden-canna
+common-greenbrier,Common Greenbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-greenbrier
+common-privet,Common Privet,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-privet
+common-snapdragon,Common Snapdragon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-snapdragon
+common-staghorn-fern,Common Staghorn Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-staghorn-fern
+confederate-jasmine,Confederate Jasmine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/confederate-jasmine
+coolwort,Coolwort,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coolwort
+coontie-palm,Coontie Palm,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coontie-palm
+copper-rose,Copper Rose,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/copper-rose
+copperleaf,Copperleaf,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/copperleaf
+coral-bells,Coral Bells,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coral-bells
+cordatum,Cordatum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cordatum
+coreopsis,Coreopsis,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/coreopsis
+corn-plant,Corn Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/corn-plant
+cornflower,Cornflower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cornflower
+cornstalk-plant,Cornstalk Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cornstalk-plant
+cow-parsnip,Cow parsnip,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cow-parsnip
+cowbane,Cowbane,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cowbane
+crape-myrtle,Crape Myrtle,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/crape-myrtle
+creeping-charlie,Creeping Charlie,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/creeping-charlie
+creeping-gloxinia,Creeping Gloxinia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/creeping-gloxinia
+creeping-mahonia,Creeping Mahonia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/creeping-mahonia
+creeping-pilea,Creeping Pilea,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/creeping-pilea
+creeping-rubus,Creeping Rubus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/creeping-rubus
+creeping-zinnia,Creeping Zinnia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/creeping-zinnia
+crepe-myrtle,Crepe Myrtle,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/crepe-myrtle
+crimson-bottlebush,Crimson Bottlebush,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/crimson-bottlebush
+crimson-cup,Crimson Cup,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/crimson-cup
+crisped-feather-fern,Crisped Feather Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/crisped-feather-fern
+crossandra,Crossandra,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/crossandra
+cuckoo-pint,Cuckoo-pint,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cuckoo-pint
+cucumber,Cucumber,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cucumber
+cushion-aloe,Cushion Aloe,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cushion-aloe
+cushion-moss,Cushion Moss,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cushion-moss
+cutleaf-philodendron,Cutleaf Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cutleaf-philodendron
+cycads,Cycads,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cycads
+cyclamen,Cyclamen,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cyclamen
+cyrtudeira,Cyrtudeira,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/cyrtudeira
+daffodil,Daffodil,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/daffodil
+dahlia,Dahlia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dahlia
+dainty-rabbits-foot-fern,Dainty Rabbits-Foot Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dainty-rabbits-foot-fern
+daisy,Daisy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/daisy
+dallas-fern,Dallas Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dallas-fern
+dancing-doll-orchid,Dancing Doll Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dancing-doll-orchid
+day-lilies-many-varieties,Day Lilies (many varieties),False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/day-lilies-many-varieties
+deadly-nightshade,Deadly Nightshade,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/deadly-nightshade
+desert-azalea,Desert Azalea,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/desert-azalea
+desert-rose,Desert Rose,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/desert-rose
+desert-trumpet,Desert Trumpet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/desert-trumpet
+devils-backbone,Devil's Backbone,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/devils-backbone
+devils-ivy,Devils Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/devils-ivy
+dichelostemma,Dichelostemma,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dichelostemma
+dichorisandra-reginae,Dichorisandra Reginae,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dichorisandra-reginae
+dieffenbachia,Dieffenbachia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dieffenbachia
+dill,Dill,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dill
+dinteranthus,Dinteranthus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dinteranthus
+dock,Dock,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dock
+dog-daisy,Dog Daisy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dog-daisy
+dog-hobble,Dog Hobble,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dog-hobble
+dogbane-hemp,Dogbane Hemp,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dogbane-hemp
+dracaena,Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dracaena
+duffii-fern,Duffii Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/duffii-fern
+dumbcane,Dumbcane,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dumbcane
+dwarf-date-palm,Dwarf Date Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-date-palm
+dwarf-feather-palm,Dwarf Feather Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-feather-palm
+dwarf-palm,Dwarf Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-palm
+dwarf-poinciana,Dwarf Poinciana,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-poinciana
+dwarf-rose-stripe-star,Dwarf Rose-Stripe Star,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-rose-stripe-star
+dwarf-royal-palm,Dwarf Royal Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-royal-palm
+dwarf-whitman-fern,Dwarf Whitman Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/dwarf-whitman-fern
+earth-star,Earth Star,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/earth-star
+easter-cattleya,Easter Cattleya,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/easter-cattleya
+easter-daisy,Easter Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/easter-daisy
+easter-lily,Easter Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/easter-lily
+easter-lily-cactus,Easter Lily Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/easter-lily-cactus
+easter-orchid,Easter Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/easter-orchid
+easter-rose,Easter Rose,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/easter-rose
+eastern-star,Eastern Star,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/eastern-star
+edible-banana,Edible Banana,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/edible-banana
+elephant-ear-begonia,Elephant-Ear Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/elephant-ear-begonia
+elephant-ears-caladium-hortulanum,Elephant Ears (Caladium hortulanum),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/elephant-ears-caladium-hortulanum
+elephant-ears-colocasia-esculenta,Elephant Ears (Colocasia esculenta),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/elephant-ears-colocasia-esculenta
+emerald-feather,Emerald Feather,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/emerald-feather
+emerald-ripple-peperomia,Emerald Ripple Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/emerald-ripple-peperomia
+english-hawthorn,English Hawthorn,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/english-hawthorn
+english-holly,English Holly,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/english-holly
+english-ivy,English Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/english-ivy
+english-yew,English Yew,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/english-yew
+epazote,Epazote,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/epazote
+episcia,Episcia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/episcia
+eucalyptus,Eucalyptus,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/eucalyptus
+european-bittersweet,European Bittersweet,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/european-bittersweet
+european-holly,European Holly,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/european-holly
+exotica,Exotica,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/exotica
+fairy-fountain,Fairy Fountain,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fairy-fountain
+false-aralia,False Aralia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/false-aralia
+false-bittersweet,False Bittersweet,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/false-bittersweet
+false-queen-annes-lace,False Queen Anne’s Lace,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/false-queen-annes-lace
+fan-tufted-palm,Fan Tufted Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fan-tufted-palm
+feather-geranium,Feather Geranium,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/feather-geranium
+feather-palm,Feather Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/feather-palm
+fennel,Fennel,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fennel
+fern-palm,Fern Palm,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fern-palm
+fetter-bush,Fetter Bush,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fetter-bush
+fetterbush,Fetterbush,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fetterbush
+fiddle-leaf,Fiddle-Leaf,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fiddle-leaf
+fiery-reed-orchid,Fiery Reed Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fiery-reed-orchid
+fig,Fig,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fig
+fig-leaf-gourd,Fig Leaf Gourd,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fig-leaf-gourd
+figleaf-palm,Figleaf Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/figleaf-palm
+figwort,Figwort,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/figwort
+fingernail-plant,Fingernail Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fingernail-plant
+fire-lily,Fire Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fire-lily
+fire-weed,Fire Weed,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fire-weed
+fish-tail-fern,Fish Tail Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fish-tail-fern
+flag,Flag,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/flag
+flame-african-violet,Flame African Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/flame-african-violet
+flame-woods,Flame of the Woods,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/flame-woods
+flamingo-flower,Flamingo Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/flamingo-flower
+fleabane,Fleabane,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fleabane
+florida-beauty,Florida Beauty,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/florida-beauty
+florida-butterfly-orchid-encyclia-tampensis,Florida Butterfly Orchid (Encyclia tampensis),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/florida-butterfly-orchid-encyclia-tampensis
+florida-butterfly-orchid-epidendrum-tampense,Florida Butterfly Orchid (Epidendrum tampense),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/florida-butterfly-orchid-epidendrum-tampense
+florists-calla,Florist's Calla,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/florists-calla
+fluffy-ruffles,Fluffy Ruffles,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fluffy-ruffles
+forster-sentry-palm,Forster Sentry Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/forster-sentry-palm
+fortunes-palm,Fortunes Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/fortunes-palm
+foxglove,Foxglove,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/foxglove
+foxtail,Foxtail,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/foxtail
+franciscan-rain-tree,Franciscan Rain Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/franciscan-rain-tree
+freckle-face,Freckle Face,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/freckle-face
+friendship-plant,Friendship Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/friendship-plant
+garden-calla,Garden Calla,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/garden-calla
+garden-chamomile,Garden Chamomile,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/garden-chamomile
+garden-hyacinth,Garden Hyacinth,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/garden-hyacinth
+garden-marigold,Garden Marigold,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/garden-marigold
+garden-snapdragon,Garden Snapdragon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/garden-snapdragon
+gardenia,Gardenia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gardenia
+garlic,Garlic,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/garlic
+geranium,Geranium,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/geranium
+geranium-leaf-aralia,Geranium-Leaf Aralia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/geranium-leaf-aralia
+gerber-daisy,Gerber Daisy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gerber-daisy
+german-violet,German Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/german-violet
+gherkins,Gherkins,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gherkins
+ghost-leafless-orchid,Ghost Leafless Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ghost-leafless-orchid
+ghost-plant,Ghost Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ghost-plant
+giant-aster,Giant Aster,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-aster
+giant-dracaena,Giant Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-dracaena
+giant-dumb-cane,Giant Dumb Cane,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-dumb-cane
+giant-hogweed,Giant Hogweed,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-hogweed
+giant-holly-fern,Giant Holly Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-holly-fern
+giant-touch-me-not,Giant Touch-Me-Not,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-touch-me-not
+giant-white-inch-plant,Giant White Inch Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/giant-white-inch-plant
+glacier-ivy,Glacier Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/glacier-ivy
+gladiola,Gladiola,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gladiola
+globe-thistle,Globe Thistle,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/globe-thistle
+gloriosa-lily,Gloriosa Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gloriosa-lily
+gloxinia,Gloxinia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gloxinia
+gold-bloom,Gold Bloom,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gold-bloom
+gold-dieffenbachia,Gold Dieffenbachia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gold-dieffenbachia
+gold-dust-dracaena,Gold Dust Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gold-dust-dracaena
+gold-fish-plant,Gold-Fish Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gold-fish-plant
+golden-bells,Golden Bells,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-bells
+golden-birds-nest,Golden Birds Nest,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-birds-nest
+golden-butterfly-palm,Golden Butterfly Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-butterfly-palm
+golden-lace-orchid,Golden Lace Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-lace-orchid
+golden-pothos,Golden Pothos,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-pothos
+golden-ragwort,Golden Ragwort,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-ragwort
+golden-shower-orchid,Golden Shower Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-shower-orchid
+good-luck-palm,Good Luck Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/good-luck-palm
+good-luck-plant,Good Luck Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/good-luck-plant
+grape-hyacinth,Grape Hyacinth,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/grape-hyacinth
+grape-ivy,Grape Ivy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/grape-ivy
+grapefruit,Grapefruit,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/grapefruit
+grass-palm,Grass Palm,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/grass-palm
+great-willow-herb,Great Willow Herb,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/great-willow-herb
+greater-ammi,Greater Ammi,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/greater-ammi
+green-gold-naphthysis,Green Gold Naphthysis,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/green-gold-naphthysis
+green-ripple-peperomia,Green Ripple Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/green-ripple-peperomia
+greenbrier,Greenbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/greenbrier
+ground-apple,Ground Apple,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ground-apple
+groundsel,Groundsel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/groundsel
+hagbrier,Hagbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hagbrier
+hahns-self-branching-english-ivy,Hahn's Self Branching English Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hahns-self-branching-english-ivy
+hardy-baby-tears,Hardy Baby Tears,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hardy-baby-tears
+hardy-gloxinia,Hardy Gloxinia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hardy-gloxinia
+hare-fern,Hare Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hare-fern
+hashish,Hashish,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hashish
+hawaiian-ti,Hawaiian Ti,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hawaiian-ti
+haworthia,Haworthia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/haworthia
+haws,Haws,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/haws
+haws-apple,Haws Apple,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/haws-apple
+hawthorn,Hawthorn,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hawthorn
+heartleaf-philodendron,Heartleaf Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/heartleaf-philodendron
+heavenly-bamboo,Heavenly Bamboo,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/heavenly-bamboo
+hedgehog-gourd,Hedgehog Gourd,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hedgehog-gourd
+hellebore,Hellebore,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hellebore
+hellfetter,Hellfetter,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hellfetter
+hemlock-tree,Hemlock Tree,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hemlock-tree
+hen-and-chickens-fern,Hen and Chickens Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hen-and-chickens-fern
+hens-and-chickens,Hens and Chickens,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hens-and-chickens
+hercules-club,Hercules' Club,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hercules-club
+hibiscus,Hibiscus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hibiscus
+hills-snow,Hills of Snow,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hills-snow
+hindu-rope-plant,Hindu Rope Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hindu-rope-plant
+hoary-alyssum,Hoary Alyssum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hoary-alyssum
+holligold,Holligold,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/holligold
+holly,Holly,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/holly
+holly-fern,Holly Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/holly-fern
+hollyhock,Hollyhock,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hollyhock
+honey-locust,Honey Locust,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/honey-locust
+honey-plant,Honey Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/honey-plant
+honeydew-melon,Honeydew Melon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/honeydew-melon
+honeysuckle-fuchsia,Honeysuckle Fuchsia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/honeysuckle-fuchsia
+hookera-pulchella,Hookera pulchella,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hookera-pulchella
+hops,Hops,True,,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hops
+horse-chestnut,Horse Chestnut,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/horse-chestnut
+horsehead-philodendron,Horsehead Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/horsehead-philodendron
+horseweed,Horseweed,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/horseweed
+hortensia,Hortensia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hortensia
+hosta,Hosta,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hosta
+hubbard-squash,Hubbard Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hubbard-squash
+hurricane-plant,Hurricane Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hurricane-plant
+hyacinth,Hyacinth,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hyacinth
+hydrangea,Hydrangea,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hydrangea
+hypocyrta,Hypocyrta,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hypocyrta
+ice-plant,Ice Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ice-plant
+impala-lily,Impala Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/impala-lily
+impatience-plant,Impatience Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/impatience-plant
+inch-plant,Inch Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/inch-plant
+indian-apple,Indian Apple,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/indian-apple
+indian-borage,Indian Borage,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/indian-borage
+indian-hemp-apocynum-androsaemifolium,Indian Hemp (Apocynum androsaemifolium),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/indian-hemp-apocynum-androsaemifolium
+indian-hemp-cannabis-sativa,Indian Hemp (Cannabis sativa),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/indian-hemp-cannabis-sativa
+indian-pink,Indian Pink,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/indian-pink
+indian-rubber-plant,Indian Rubber Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/indian-rubber-plant
+inkberry,Inkberry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/inkberry
+iris,Iris,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/iris
+irish-moss,Irish Moss,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/irish-moss
+iron-cross-begonia,Iron Cross Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/iron-cross-begonia
+iron-tree,Iron Tree,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/iron-tree
+ivy-arum,Ivy Arum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ivy-arum
+ivy-peperomia,Ivy Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ivy-peperomia
+jack-pulpit,Jack-in-the-pulpit,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jack-pulpit
+jackson-brier,Jackson Brier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jackson-brier
+jacobs-ladder,Jacob's Ladder,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jacobs-ladder
+jade-plant,Jade Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jade-plant
+japanese-aralia,Japanese Aralia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-aralia
+japanese-holly-fern,Japanese Holly Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-holly-fern
+japanese-moss,Japanese Moss,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-moss
+japanese-pittosporum,Japanese Pittosporum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-pittosporum
+japanese-show-lily,Japanese Show Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-show-lily
+japanese-yew,Japanese Yew,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/japanese-yew
+jasmine,Jasmine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jasmine
+jerusalem-cherry,Jerusalem Cherry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jerusalem-cherry
+jerusalem-oak,Jerusalem Oak,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jerusalem-oak
+jewel-orchid,Jewel Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jewel-orchid
+jonquil,Jonquil,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jonquil
+josephs-coat,Joseph's Coat,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/josephs-coat
+jungle-geranium,Jungle Geranium,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/jungle-geranium
+kaempferia,Kaempferia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kaempferia
+kaffir-lily,Kaffir Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kaffir-lily
+kahali-ginger,Kahali Ginger,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kahali-ginger
+kalanchoe,Kalanchoe,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kalanchoe
+kenilworth-ivy,Kenilworth Ivy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kenilworth-ivy
+kentia-palm,Kentia Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kentia-palm
+kenya-violet,Kenya Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kenya-violet
+kharoub,Kharoub,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kharoub
+king-and-queen-fern,King and Queen Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/king-and-queen-fern
+king-forest,King of the Forest,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/king-forest
+king-nut,King Nut,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/king-nut
+kiss-me-quick,Kiss-me-quick,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kiss-me-quick
+klamath-weed,Klamath Weed,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/klamath-weed
+kuang-yen-pa-hsieh,Kuang-yen-pa-hsieh,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kuang-yen-pa-hsieh
+kudu-lily,Kudu Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kudu-lily
+lace-fern,Lace Fern,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lace-fern
+lace-flower-vine,Lace Flower Vine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lace-flower-vine
+lace-orchid,Lace Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lace-orchid
+lacy-tree-philodendron,Lacy Tree Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lacy-tree-philodendron
+ladies-ear-drops,Ladies Ear Drops,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ladies-ear-drops
+lady-lou,Lady Lou,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lady-lou
+lady-night,Lady-of-the-night,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lady-night
+lady-palm,Lady Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lady-palm
+lady-slipper,Lady Slipper,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lady-slipper
+lagerstroemia-indica,Lagerstroemia Indica,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lagerstroemia-indica
+lambkill,Lambkill,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lambkill
+lance-pleomele,Lance Pleomele,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lance-pleomele
+lantana,Lantana,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lantana
+larkspur,Larkspur,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/larkspur
+laurel,Laurel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/laurel
+laurel-leaved-greenbrier,Laurel-Leaved Greenbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/laurel-leaved-greenbrier
+lavender,Lavender,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lavender
+leather-peperomia,Leather Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/leather-peperomia
+leatherflower,Leatherflower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/leatherflower
+leek,Leek,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/leek
+lemon,Lemon,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lemon
+lemon-balm,Lemon Balm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lemon-balm
+lemon-grass,Lemon Grass,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lemon-grass
+lemon-verbena,Lemon Verbena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lemon-verbena
+lenten-rose,Lenten Rose,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lenten-rose
+leopard-orchid,Leopard Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/leopard-orchid
+lesser-snapdragon,Lesser Snapdragon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lesser-snapdragon
+lily,Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lily
+lily-palace,Lily of the Palace,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lily-palace
+lily-valley,Lily of the Valley,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lily-valley
+lily-valley-bush,Lily-of-the-Valley Bush,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lily-valley-bush
+lily-valley-orchid,Lily of the Valley Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lily-valley-orchid
+lime,Lime,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lime
+linden,Linden,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/linden
+lipstick-plant,Lipstick Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lipstick-plant
+little-fantasy-peperomia,Little Fantasy Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/little-fantasy-peperomia
+little-zebra-plant,Little Zebra Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/little-zebra-plant
+living-rock-cactus,Living Rock Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/living-rock-cactus
+living-stones,Living Stones,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/living-stones
+lobelia,Lobelia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lobelia
+loco-weed-oxytropis-spp,Loco Weed (Oxytropis spp.),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/loco-weed-oxytropis-spp
+locust,Locust,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/locust
+locust-pods,Locust Pods,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/locust-pods
+lord-and-ladies,Lord-and-Ladies,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lord-and-ladies
+lovage,Lovage,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/lovage
+macadamia-nut,Macadamia Nut,True,,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/macadamia-nut
+madagascar-dragon-tree,Madagascar Dragon Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/madagascar-dragon-tree
+madagascar-jasmine,Madagascar Jasmine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/madagascar-jasmine
+magnolia-bush,Magnolia Bush,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/magnolia-bush
+mahonia,Mahonia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mahonia
+majesty-palm,Majesty Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/majesty-palm
+malabar-gourd,Malabar Gourd,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/malabar-gourd
+malanga,Malanga,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/malanga
+malaysian-dracaena,Malaysian Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/malaysian-dracaena
+maleberry,Maleberry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/maleberry
+manila-palm,Manila Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/manila-palm
+mapleleaf-begonia,Mapleleaf Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mapleleaf-begonia
+maranta,Maranta,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/maranta
+marble-queen,Marble Queen,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/marble-queen
+marbled-fingernail,Marbled Fingernail,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/marbled-fingernail
+marijuana,Marijuana,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/marijuana
+mariposa-lily,Mariposa Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mariposa-lily
+marjoram,Marjoram,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/marjoram
+maroon,Maroon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/maroon
+maroon-chenille-plant,Maroon Chenille Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/maroon-chenille-plant
+mary-bud,Mary-Bud,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mary-bud
+mauna-loa-peace-lily,Mauna Loa Peace Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mauna-loa-peace-lily
+mayapple,Mayapple,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mayapple
+mayweed,Mayweed,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mayweed
+meadow-saffron,Meadow Saffron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/meadow-saffron
+measles-plant,Measles Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/measles-plant
+medicine-plant,Medicine Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/medicine-plant
+metallic-leaf-begonia,Metallic Leaf Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/metallic-leaf-begonia
+metallic-peperomia,Metallic Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/metallic-peperomia
+mexican-breadfruit,Mexican Breadfruit,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mexican-breadfruit
+mexican-firecracker,Mexican Firecracker,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mexican-firecracker
+mexican-rosettes,Mexican Rosettes,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mexican-rosettes
+mexican-snowballs,Mexican Snowballs,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mexican-snowballs
+milfoil,Milfoil,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/milfoil
+milkweed,Milkweed,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/milkweed
+miniature-date-palm,Miniature Date Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/miniature-date-palm
+miniature-fish-tail,Miniature Fish Tail,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/miniature-fish-tail
+miniature-maranta,Miniature Maranta,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/miniature-maranta
+miniature-marble-plant,Miniature Marble Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/miniature-marble-plant
+mint,Mint,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mint
+mistletoe-american,"Mistletoe ""American""",True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mistletoe-american
+mistletoe-cactus,Mistletoe Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mistletoe-cactus
+mock-azalea,Mock Azalea,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mock-azalea
+mockernut-hickory,Mockernut Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mockernut-hickory
+mole-bean-plant,Mole Bean Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mole-bean-plant
+money-tree,Money Tree,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/money-tree
+morning-glory,Morning Glory,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/morning-glory
+morning-noon-and-night,Morning-Noon-and-Night,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/morning-noon-and-night
+mosaic-plant,Mosaic Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mosaic-plant
+mosaic-vase,Mosaic Vase,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mosaic-vase
+moss-agate,Moss Agate,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/moss-agate
+moss-campion,Moss Campion,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/moss-campion
+moss-fern,Moss Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/moss-fern
+moss-phlox,Moss Phlox,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/moss-phlox
+moss-rose,Moss Rose,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/moss-rose
+mossy-campion,Mossy Campion,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mossy-campion
+mother-fern,Mother Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-fern
+mother-law,Mother-in-Law,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-law
+mother-law-plant,Mother-In-Law Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-law-plant
+mother-laws-tongue,Mother-in-Law’s Tongue,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-laws-tongue
+mother-millions,Mother of Millions,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-millions
+mother-pearl,Mother of Pearl,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-pearl
+mother-spleenwort,Mother Spleenwort,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mother-spleenwort
+mountain-camellia,Mountain Camellia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mountain-camellia
+mountain-grape,Mountain Grape,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mountain-grape
+mulberry-bush-greenbrier,Mulberry Bush Greenbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mulberry-bush-greenbrier
+mulberry-tree,Mulberry Tree,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mulberry-tree
+mum,Mum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/mum
+musa-paradisiaca,Musa Paradisiaca,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/musa-paradisiaca
+muscari-armeniacum,Muscari Armeniacum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/muscari-armeniacum
+muskmelon,Muskmelon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/muskmelon
+naked-lady,Naked Lady,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/naked-lady
+nandina,Nandina,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nandina
+narcissus,Narcissus,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/narcissus
+nasturtium,Nasturtium,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nasturtium
+nasturtium-watercress,Nasturtium (Watercress),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nasturtium-watercress
+natal-plum,Natal Plum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/natal-plum
+neanthe-bella-palm,Neanthe Bella Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/neanthe-bella-palm
+needlepoint-ivy,Needlepoint Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/needlepoint-ivy
+nematanthus-spp,Nematanthus spp.,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nematanthus-spp
+neoregelia,Neoregelia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/neoregelia
+nephthytis,Nephthytis,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nephthytis
+nerve-plant,Nerve Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nerve-plant
+nicotiana,Nicotiana,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nicotiana
+night-blooming-cereus,Night Blooming Cereus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/night-blooming-cereus
+nightshade,Nightshade,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nightshade
+octopus-tree,Octopus Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/octopus-tree
+oilcloth-flower,Oilcloth Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oilcloth-flower
+old-man-cactus,Old Man Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/old-man-cactus
+old-world-orchid,Old World Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/old-world-orchid
+oleander,Oleander,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oleander
+onion,Onion,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/onion
+orange,Orange,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/orange
+orange-day-lily,Orange Day Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/orange-day-lily
+orange-star,Orange Star,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/orange-star
+oregano,Oregano,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oregano
+oregon-grape,Oregon Grape,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oregon-grape
+oregon-holly,Oregon Holly,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/oregon-holly
+ornamental-pepper,Ornamental Pepper,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ornamental-pepper
+ossifragi-vase,Ossifragi Vase,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ossifragi-vase
+pacific-yew,Pacific Yew,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pacific-yew
+paddys-wig,Paddys Wig,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/paddys-wig
+painted-lady,Painted Lady,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/painted-lady
+painters-pallette,Painter's Pallette,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/painters-pallette
+palm-lily,Palm Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/palm-lily
+pampas-grass,Pampas Grass,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pampas-grass
+panamiga,Panamiga,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/panamiga
+panda-plant,Panda Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/panda-plant
+pansy-orchid,Pansy Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pansy-orchid
+paper-white,Paper White,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/paper-white
+paradise-palm,Paradise Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/paradise-palm
+paraguayan-jasmine,Paraguayan Jasmine,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/paraguayan-jasmine
+parlor-palm,Parlor Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/parlor-palm
+parsley,Parsley,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/parsley
+parsley-fern,Parsley Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/parsley-fern
+patient-lucy,Patient Lucy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/patient-lucy
+patient-plant,Patient Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/patient-plant
+peace-begonia,Peace Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peace-begonia
+peace-lily,Peace Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peace-lily
+peach,Peach,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peach
+peacock-flower,Peacock Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peacock-flower
+peacock-plant,Peacock Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peacock-plant
+pearl-plant,Pearl Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pearl-plant
+pearly-dots,Pearly Dots,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pearly-dots
+pencil-cactus,Pencil Cactus,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pencil-cactus
+peony,Peony,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peony
+peperomia-hederifolia,Peperomia Hederifolia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peperomia-hederifolia
+peperomia-peltfolia,Peperomia Peltfolia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peperomia-peltfolia
+peperomia-rotundifolia,Peperomia Rotundifolia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peperomia-rotundifolia
+peperomia-sandersii,Peperomia Sandersii,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peperomia-sandersii
+pepper-face,Pepper Face,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pepper-face
+periwinkle,Periwinkle,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/periwinkle
+persian-violet,Persian Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/persian-violet
+peruvian-lily,Peruvian Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peruvian-lily
+petunia,Petunia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/petunia
+phalaenopsis-orchid,Phalaenopsis Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid
+pheasant-plant,Pheasant Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pheasant-plant
+philodendron-pertusum,Philodendron Pertusum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/philodendron-pertusum
+pie-plant,Pie Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pie-plant
+pieris,Pieris,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pieris
+pig-lily,Pig Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pig-lily
+piggy-back-plant,Piggy Back Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/piggy-back-plant
+pignut-hickory,Pignut Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pignut-hickory
+pigtail-plant,Pigtail Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pigtail-plant
+pilea-microphylla,Pilea Microphylla,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pilea-microphylla
+pilea-mucosa,Pilea Mucosa,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pilea-mucosa
+pincushion-flower,Pincushion Flower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pincushion-flower
+pink-brocade,Pink Brocade,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pink-brocade
+pink-pearl,Pink Pearl,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pink-pearl
+pink-splash,Pink Splash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pink-splash
+pink-starlite,Pink Starlite,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pink-starlite
+pinks,Pinks,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pinks
+pirliteiro,Pirliteiro,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pirliteiro
+pitaya,Pitaya,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pitaya
+plantain-lily,Plantain Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/plantain-lily
+plantanus-occidentalis,Plantanus Occidentalis,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/plantanus-occidentalis
+platinum-peperomia,Platinum Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/platinum-peperomia
+platycerium-alcicorne,Platycerium Alcicorne,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/platycerium-alcicorne
+plum,Plum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/plum
+plumbago-larpentiae,Plumbago Larpentiae,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/plumbago-larpentiae
+plumosa-fern,Plumosa Fern,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/plumosa-fern
+plush-plant,Plush Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/plush-plant
+poinciana,Poinciana,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poinciana
+poinsettia,Poinsettia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poinsettia
+poison-daisy,Poison Daisy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poison-daisy
+poison-hemlock,Poison Hemlock,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poison-hemlock
+poison-ivy,Poison Ivy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poison-ivy
+poison-oak,Poison Oak,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poison-oak
+poison-parsnip,Poison Parsnip,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poison-parsnip
+poison-sumac,Poison Sumac,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/poison-sumac
+polka-dot-plant,Polka Dot Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/polka-dot-plant
+polystichum-falcatum,Polystichum Falcatum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/polystichum-falcatum
+pony-tail,Pony Tail,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pony-tail
+porcelain-flower,Porcelain Flower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/porcelain-flower
+portulaca,Portulaca,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/portulaca
+pot-marigold,Pot Marigold,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pot-marigold
+prairie-lily,Prairie Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prairie-lily
+prayer-plant,Prayer Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prayer-plant
+pride-india,Pride-of-India,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pride-india
+primrose,Primrose,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/primrose
+privet,Privet,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/privet
+prostrate-coleus,Prostrate Coleus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/prostrate-coleus
+pupleosier-willow,Pupleosier Willow,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/pupleosier-willow
+purple-baby-tears,Purple Baby Tears,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/purple-baby-tears
+purple-passion-vine,Purple Passion Vine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/purple-passion-vine
+purple-velvet-plant,Purple Velvet Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/purple-velvet-plant
+purple-waffle-plant,Purple Waffle Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/purple-waffle-plant
+purslane,Purslane,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/purslane
+queencup,Queencup,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/queencup
+queens-spiderwort,Queens Spiderwort,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/queens-spiderwort
+queensland-arrowroot,Queensland Arrowroot,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/queensland-arrowroot
+queensland-nut,Queensland Nut,True,,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/queensland-nut
+rabbits-foot-fern,Rabbits Foot Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rabbits-foot-fern
+racemose-asparagus,Racemose asparagus,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/racemose-asparagus
+ragwort,Ragwort,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ragwort
+rainbow-orchid,Rainbow Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rainbow-orchid
+rangers-button,Ranger's Button,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rangers-button
+red-african-violet,Red African Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-african-violet
+red-berried-greenbrier,Red Berried Greenbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-berried-greenbrier
+red-edge-peperomia,Red Edge Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-edge-peperomia
+red-emerald,Red Emerald,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-emerald
+red-hawthorne,Red Hawthorne,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-hawthorne
+red-lily,Red Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-lily
+red-maple,Red Maple,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-maple
+red-marginated-dracaena,Red-Marginated Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-marginated-dracaena
+red-palm-lily,Red Palm Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-palm-lily
+red-princess,Red Princess,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-princess
+red-veined-prayer,Red Veined Prayer,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/red-veined-prayer
+reed-palm,Reed Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/reed-palm
+resurrection-lily,Resurrection Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/resurrection-lily
+rex-begonia,Rex Begonia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rex-begonia
+rhododendron,Rhododendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rhododendron
+rhubarb,Rhubarb,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rhubarb
+rhynchophorum,Rhynchophorum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rhynchophorum
+ribbon-plant,Ribbon Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ribbon-plant
+ribbon-plant-chlorophytum-comosum,Ribbon Plant (Chlorophytum Comosum),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ribbon-plant-chlorophytum-comosum
+ridderstjerne,Ridderstjerne,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ridderstjerne
+rock-moss,Rock Moss,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rock-moss
+roman-chamomile,Roman Chamomile,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/roman-chamomile
+roosevelt-fern,Roosevelt Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/roosevelt-fern
+rosary-pea,Rosary Pea,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rosary-pea
+rose,Rose,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rose
+rose-china,Rose of China,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rose-china
+rose-sharon,Rose of Sharon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rose-sharon
+rosebay,Rosebay,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rosebay
+rosemary,Rosemary,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rosemary
+rubrum-lily,Rubrum Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/rubrum-lily
+running-myrtle,Running Myrtle,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/running-myrtle
+russian-knapweed,Russian Knapweed,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/russian-knapweed
+russian-olive,Russian Olive,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/russian-olive
+sabi-star,Sabi Star,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sabi-star
+sacred-bamboo,Sacred Bamboo,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sacred-bamboo
+saddle-leaf,Saddle Leaf,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/saddle-leaf
+saffron-spike-zebra,Saffron Spike Zebra,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/saffron-spike-zebra
+sage,Sage,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sage
+sago-palm,Sago Palm,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sago-palm
+saint-bernards-lily,Saint Bernards Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/saint-bernards-lily
+salad-burnet,Salad Burnet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/salad-burnet
+sand-lily,Sand Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sand-lily
+sand-verbena,Sand Verbena,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sand-verbena
+satin-pellionia,Satin Pellionia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/satin-pellionia
+satin-pothos,Satin Pothos,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/satin-pothos
+savory-summer,Savory (Summer),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/savory-summer
+savory-winter,Savory (Winter),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/savory-winter
+sawbrier,Sawbrier,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sawbrier
+scabious,Scabious,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/scabious
+scarborough-lily,Scarborough Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/scarborough-lily
+scarlet-orchid,Scarlet Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/scarlet-orchid
+scarlet-sage,Scarlet Sage,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/scarlet-sage
+scented-geranium,Scented Geranium,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/scented-geranium
+schefflera,Schefflera,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/schefflera
+seaside-daisy,Seaside Daisy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/seaside-daisy
+sego-lily,Sego Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sego-lily
+seven-bark,Seven Bark,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/seven-bark
+shagbark-hickory,Shagbark Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shagbark-hickory
+shamrock-plant,Shamrock Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shamrock-plant
+shan-kuei-lai,Shan Ku'ei-lai,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shan-kuei-lai
+shatavari,Shatavari,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shatavari
+shellbark-hickory,Shellbark Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shellbark-hickory
+showy-daisy,Showy Daisy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/showy-daisy
+shrimp-cactus,Shrimp Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shrimp-cactus
+silver-bell,Silver Bell,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-bell
+silver-berry,Silver Berry,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-berry
+silver-dollar,Silver Dollar,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-dollar
+silver-heart,Silver Heart,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-heart
+silver-jade-plant,Silver Jade Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-jade-plant
+silver-pink-vine,Silver Pink Vine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-pink-vine
+silver-star,Silver Star,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-star
+silver-table-fern,Silver Table Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-table-fern
+silver-tree-anamiga,Silver Tree Anamiga,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/silver-tree-anamiga
+skunk-cabbage,Skunk Cabbage,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/skunk-cabbage
+slender-deutzia,Slender Deutzia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/slender-deutzia
+small-fruited-hickory,Small Fruited Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/small-fruited-hickory
+smilax-tamnoides-vas,Smilax Tamnoides Vas,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/smilax-tamnoides-vas
+snake-lilly,Snake Lilly,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/snake-lilly
+snake-plant,Snake Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/snake-plant
+solomons-lily,Solomon’s Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/solomons-lily
+sorrel,Sorrel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sorrel
+sowbread,Sowbread,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sowbread
+spanish-thyme,Spanish Thyme,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spanish-thyme
+speckled-wood-lily,Speckled Wood Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/speckled-wood-lily
+spice-orchid-epidendrum-atropurpeum,Spice Orchid (Epidendrum atropurpeum),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spice-orchid-epidendrum-atropurpeum
+spice-orchid-epidendrum-ibaguense,Spice Orchid (Epidendrum ibaguense),False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spice-orchid-epidendrum-ibaguense
+spider-flower,Spider Flower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spider-flower
+spider-ivy,Spider Ivy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spider-ivy
+spider-plant,Spider Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spider-plant
+spindle-tree,Spindle Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spindle-tree
+split-leaf-philodendron,Split Leaf Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/split-leaf-philodendron
+spotted-dumb-cane,Spotted Dumb Cane,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spotted-dumb-cane
+sprengeri-fern,Sprengeri Fern,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sprengeri-fern
+spring-parsley,Spring Parsley,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spring-parsley
+st-johns-wort,St. John’s Wort,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/st-johns-wort
+staggerbush,Staggerbush,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/staggerbush
+star-jasmine,Star Jasmine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/star-jasmine
+star-lily,Star Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/star-lily
+star-plant,Star Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/star-plant
+starch-root,Starch Root,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/starch-root
+stargazer-lily,Stargazer Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/stargazer-lily
+starleaf,Starleaf,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/starleaf
+stevia,Stevia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/stevia
+stinking-chamomile,Stinking Chamomile,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/stinking-chamomile
+straight-margined-dracaena,Straight-Margined Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/straight-margined-dracaena
+strawberry,Strawberry,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/strawberry
+striped-blushing,Striped Blushing,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/striped-blushing
+striped-dracaena,Striped Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/striped-dracaena
+sudan-grass,Sudan Grass,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sudan-grass
+sugar-pods,Sugar Pods,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sugar-pods
+sulfur-flower,Sulfur Flower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sulfur-flower
+summer-hyacinth,Summer Hyacinth,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/summer-hyacinth
+sunflower,Sunflower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sunflower
+superb-lily,Superb Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/superb-lily
+swamp-sunflower,Swamp Sunflower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/swamp-sunflower
+swedish-ivy,Swedish Ivy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/swedish-ivy
+sweet-cherry,Sweet Cherry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweet-cherry
+sweet-pea,Sweet Pea,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweet-pea
+sweet-potato-vine,Sweet Potato Vine,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweet-potato-vine
+sweet-william,Sweet William,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweet-william
+sweetheart-hoya,Sweetheart Hoya,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweetheart-hoya
+sweetheart-ivy,Sweetheart Ivy,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweetheart-ivy
+swiss-cheese-plant,Swiss Cheese Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/swiss-cheese-plant
+sword-fern,Sword Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sword-fern
+tahitian-bridal-veil,Tahitian Bridal Veil,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tahitian-bridal-veil
+tail-flower,Tail Flower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tail-flower
+tailed-orchid,Tailed Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tailed-orchid
+tall-feather-fern,Tall Feather Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tall-feather-fern
+tall-mahonia,Tall Mahonia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tall-mahonia
+tangerine-impatience,Tangerine Impatience,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tangerine-impatience
+taro-caladium-hortulanum,Taro (Caladium hortulanum),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/taro-caladium-hortulanum
+taro-colocasia-esculenta,Taro (Colocasia esculenta),True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/taro-colocasia-esculenta
+taro-vine,Taro Vine,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/taro-vine
+tarragon,Tarragon,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tarragon
+teasel-gourd,Teasel Gourd,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/teasel-gourd
+texas-sage,Texas Sage,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/texas-sage
+texas-umbrella-tree,Texas Umbrella Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/texas-umbrella-tree
+thea-japonica,Thea Japonica,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/thea-japonica
+thimble-cactus,Thimble Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/thimble-cactus
+thorn-apple,Thorn Apple,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/thorn-apple
+thyme,Thyme,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/thyme
+ti-hu-ling,Ti hu-ling,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ti-hu-ling
+ti-plant,Ti-Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/ti-plant
+tickseed,Tickseed,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tickseed
+tiger-lily,Tiger Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tiger-lily
+tiger-orchid,Tiger Orchid,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tiger-orchid
+toad-spotted-cactus,Toad Spotted Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/toad-spotted-cactus
+tobacco,Tobacco,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tobacco
+tomato-plant,Tomato Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tomato-plant
+torch-lily,Torch Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/torch-lily
+tous-les-mois,Tous-les-mois,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tous-les-mois
+trailing-peperomia,Trailing Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/trailing-peperomia
+tree-cactus,Tree Cactus,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tree-cactus
+tree-gloxinia,Tree Gloxinia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tree-gloxinia
+tree-philodendron,Tree Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tree-philodendron
+tree-tobacco,Tree Tobacco,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tree-tobacco
+tropic-snow,Tropic Snow,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tropic-snow
+tropical-moss,Tropical Moss,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tropical-moss
+true-aloe,True Aloe,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/true-aloe
+true-cantaloupe,True Cantaloupe,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/true-cantaloupe
+trumpet-lily,Trumpet Lily,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/trumpet-lily
+tu-fu-ling,Tu Fu-Ling,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tu-fu-ling
+tulip,Tulip,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tulip
+tulip-poplar,Tulip Poplar,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tulip-poplar
+turban-squash,Turban Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/turban-squash
+turf-lily,Turf Lily,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/turf-lily
+umbrella-leaf,Umbrella Leaf,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/umbrella-leaf
+umbrella-plant,Umbrella Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/umbrella-plant
+umbrella-tree,Umbrella Tree,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/umbrella-tree
+urbinia-agavoides,Urbinia Agavoides,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/urbinia-agavoides
+usambara-violet,Usambara Violet,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/usambara-violet
+variable-dieffenbachia,Variable Dieffenbachia,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/variable-dieffenbachia
+variegated-inch-plant,Variegated Inch Plant,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/variegated-inch-plant
+variegated-laurel,Variegated Laurel,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/variegated-laurel
+variegated-philodendron,Variegated Philodendron,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/variegated-philodendron
+variegated-wax-plant,Variegated Wax Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/variegated-wax-plant
+velvet-plant,Velvet Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/velvet-plant
+venus-fly-trap,Venus Fly Trap,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/venus-fly-trap
+verona-fern,Verona Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/verona-fern
+verona-lace-fern,Verona Lace Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/verona-lace-fern
+vinca,Vinca,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/vinca
+vining-peperomia,Vining Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/vining-peperomia
+violet-slipper-gloxinia,Violet Slipper Gloxinia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/violet-slipper-gloxinia
+virgins-bower,Virgin's Bower,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/virgins-bower
+waffle-plant,Waffle Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/waffle-plant
+wahoo,Wahoo,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wahoo
+wake-robin,Wake Robin,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wake-robin
+walking-anthericum,Walking Anthericum,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/walking-anthericum
+warneckei-dracaena,Warneckei Dracaena,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/warneckei-dracaena
+washington-hawthorn,Washington Hawthorn,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/washington-hawthorn
+water-flag,Water Flag,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/water-flag
+water-hemlock,Water Hemlock,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/water-hemlock
+water-hickory,Water Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/water-hickory
+water-hyacinth,Water Hyacinth,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/water-hyacinth
+watermelon-begonia,Watermelon Begonia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/watermelon-begonia
+watermelon-peperomia,Watermelon Peperomia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/watermelon-peperomia
+watermelon-pilea,Watermelon Pilea,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/watermelon-pilea
+wax-leaf,Wax-Leaf,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wax-leaf
+wax-plant,Wax Plant,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wax-plant
+wax-rosette,Wax Rosette,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wax-rosette
+weeping-bottlebrush,Weeping Bottlebrush,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/weeping-bottlebrush
+weeping-fig,Weeping Fig,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/weeping-fig
+weeping-sargent-hemlock,Weeping Sargent Hemlock,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/weeping-sargent-hemlock
+weisdornbluten,Weisdornbluten,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/weisdornbluten
+west-indian-gherkin,West Indian Gherkin,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/west-indian-gherkin
+western-sword,Western Sword,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/western-sword
+western-yew,Western Yew,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/western-yew
+white-edged-swedish-ivy,White Edged Swedish Ivy,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/white-edged-swedish-ivy
+white-ginger,White Ginger,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/white-ginger
+white-heads,White Heads,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/white-heads
+white-heart-hickory,White Heart Hickory,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/white-heart-hickory
+whitman-fern,Whitman Fern,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/whitman-fern
+wild-arum,Wild Arum,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-arum
+wild-buckwheat,Wild Buckwheat,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-buckwheat
+wild-calla,Wild Calla,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-calla
+wild-carnation,Wild Carnation,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-carnation
+wild-coffee,Wild Coffee,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-coffee
+wild-hyacinth,Wild Hyacinth,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-hyacinth
+wild-lantana,Wild Lantana,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-lantana
+wild-sasparilla,Wild Sasparilla,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-sasparilla
+wild-strawberry,Wild Strawberry,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wild-strawberry
+willow-herb,Willow Herb,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/willow-herb
+windmill-palm,Windmill Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/windmill-palm
+winter-cattleya,Winter Cattleya,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/winter-cattleya
+winter-cherry,Winter Cherry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/winter-cherry
+winterberry,Winterberry,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/winterberry
+wisteria,Wisteria,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wisteria
+withered-snapdragon,Withered Snapdragon,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/withered-snapdragon
+wood-lily,Wood Lily,False,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/wood-lily
+woolflower,Woolflower,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/woolflower
+yarrow,Yarrow,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yarrow
+yellow-bloodleaf,Yellow Bloodleaf,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yellow-bloodleaf
+yellow-flowered-gourd,Yellow-Flowered Gourd,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yellow-flowered-gourd
+yellow-oleander,Yellow Oleander,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yellow-oleander
+yellow-palm,Yellow Palm,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yellow-palm
+yellowrocket,Yellowrocket,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yellowrocket
+yesterday-today-tomorrow,"Yesterday, Today, Tomorrow",True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yesterday-today-tomorrow
+yew,Yew,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yew
+yew-pine,Yew Pine,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yew-pine
+yorba-linda,Yorba Linda,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yorba-linda
+yucca,Yucca,True,True,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/yucca
+zebra-haworthia,Zebra Haworthia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/zebra-haworthia
+zinnia,Zinnia,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/zinnia
+zucchini-squash,Zucchini Squash,False,False,https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/zucchini-squash

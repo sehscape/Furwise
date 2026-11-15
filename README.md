@@ -6,7 +6,7 @@
 
 *Hybrid retrieval · BGE reranking · species-aware filtering · a verified citation on every claim · measured stage by stage*
 
-[![CI](https://github.com/sehscape/Furwise-Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml/badge.svg)](https://github.com/sehscape/Furwise-Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml)
+[![CI](https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml/badge.svg)](https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-ChromaDB-6E40C9)
 ![Models](https://img.shields.io/badge/BGE-embed%20%2B%20rerank-orange)
@@ -19,6 +19,17 @@
 > [!IMPORTANT]
 > **For information only. Not a substitute for veterinary advice.**
 > If your pet may have eaten something toxic, contact your veterinarian or a pet poison helpline right away.
+
+<table>
+<tr>
+<td width="50%"><img src="docs/images/demo-species-trap.jpg" alt="Species trap: Furwise refuses to give a dog-only NSAID to a cat, citing the label"/></td>
+<td width="50%"><img src="docs/images/demo-emergency.jpg" alt="Emergency: the vet / poison helpline line comes first, then cited ASPCA facts"/></td>
+</tr>
+<tr>
+<td align="center"><sub><b>Species trap.</b> "rimadyl → Rimadyl (carprofen)", species = cat, answer cites the label's "Do not use in cats".</sub></td>
+<td align="center"><sub><b>Emergency.</b> The required line is added in code, the facts are quoted from the ASPCA entry.</sub></td>
+</tr>
+</table>
 
 ---
 
@@ -47,7 +58,24 @@ worse than no answer. Furwise is built around the specific ways those systems fa
 ## 📊 Results at a glance
 
 <!-- glance:start -->
-_Filled in by the evaluation; see the full table below._
+<div align="center">
+
+| 🎯 Hit@5 | 🐶🐱 Retrieval species mix-up | 🧾 Faithfulness | 🚨 Emergencies caught | 🚫 Correct declines | 💸 Cost |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **69% → 87%** | **23% → 1%** | **0.95** | **13 / 13**, 0 false alarms | **14 / 14** | **$0** |
+| dense baseline → final | dense baseline → final | RAGAS, final pipeline | final pipeline | final pipeline | free models + free tiers |
+
+</div>
+
+```mermaid
+xychart-beta
+    title "Retrieval quality by stage (104 questions)"
+    x-axis ["0 Dense", "1 + BM25", "2 + Reranker", "3 + Species filters"]
+    y-axis "percent" 0 --> 100
+    bar [69, 61, 72, 87]
+    line [23, 27, 23, 1]
+```
+<sub>Bars: hit@5 (a gold passage in the top 5). Line: retrieval species mix-up (top 5 contains evidence about the wrong animal).</sub>
 <!-- glance:end -->
 
 ---
@@ -286,6 +314,48 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 ## 🔬 What each stage changed
 
 <!-- stages:start -->
+Each stage was evaluated before the next one was built.
+
+#### Stage 0 · Baseline: dense retrieval, top 5, cited prompt
+A strong-ish baseline on purpose: the same section-aware chunks with contextual headers as every other stage,
+so later gains are not just "better chunking". It finds the right passage for **69%** of questions, but **23%**
+of species questions get evidence about the wrong animal in the top 5: "can I give my cat Rimadyl?" retrieves
+Rimadyl's dog dosing, because nothing tells the retriever that the cat is the point of the question.
+
+#### Stage 1 · + BM25 hybrid with Reciprocal Rank Fusion: **worse** (69% → 61%)
+Kept in the table because it is the most instructive result. BM25 finds the right **drug** every time (exact
+names are its strength) but the wrong **section**: owners say *"used for"*, labels say *"indicated for"*, and very
+short chunks such as a one-line Contraindications paragraph get a large BM25 length bonus. Of the 10 questions
+that changed, hybrid lost 8 and won 2. Lesson: lexical search fixes *which product*, not *which part of the label*.
+
+#### Stage 2 · + BGE cross-encoder reranker (61% → 72%, MRR 0.45 → 0.59)
+The reranker reads question and passage together, so it recovers exactly what BM25 broke: it moves the
+Indications paragraph above the Contraindications line for "what is X used for". The cost is real on a laptop
+CPU: retrieval goes from ~0.1 s to **4.2 s p50 / 11.3 s p95**. Input was capped at 320 tokens and the pool at 12
+candidates after measuring (int8 quantization was faster but reordered the top 5, so it was rejected).
+Species mix-up is unchanged (23%): ranking better does not tell the system which animal the question is about.
+
+#### Stage 3 · + Name resolution, species/entity filters, pinning, safety gates, verifier (72% → 87%)
+The biggest jump, and the one that matters for safety:
+* **Entity filter**: "rimadil" → Rimadyl (carprofen) restricts candidates to carprofen labels, so the reranker only
+  has to choose the section.
+* **Species filter** (target **or** cautioned) drops dog dosing for cat questions but keeps "Do not use in cats".
+  Retrieval mix-up falls from **23% to 1%** (one question that names both a cat and a dog).
+* **Restriction pinning** guarantees the "dogs only" banner is in the context for cross-species questions.
+* **Gates** answer all 14 must-decline questions and the 6 emergencies outside the sources in ~1 ms, without a
+  model call. **Emergency detection 13/13**, no false alarms on the other 91 questions.
+* **Verifier**: every answer is cited; sentences with unsupported citations are removed. Answer-level species
+  mix-up is **0%**, faithfulness **0.95**. The price is a 4% over-decline rate (3 of 77 answerable questions); two of them
+  are explained under failures below.
+
+> [!NOTE]
+> **Citation accuracy (63%) is scored strictly**: a citation counts only if it is the gold chunk or from the same
+> label section. Many "wrong" citations are correct facts from a sibling section (e.g. Galliprant vomiting cited from
+> Adverse Reactions instead of Precautions); RAGAS faithfulness (0.95) is the better measure of support.
+>
+> **Answer metrics for Stages 0–2** are generated on Groq's free tier, which allows ~200K tokens per model per day.
+> Stage 3 used ~100K; Stage 0 is 24/104 questions in and resumes from cache on the next quota window
+> (`furwise eval run --stage stage0 --judge`), then Stages 1 and 2. The ⏳ cells fill in automatically.
 <!-- stages:end -->
 
 ---
@@ -426,7 +496,7 @@ Chosen from what the evaluation exposed, not from a wish list. Each one reuses d
 ## 🚀 Quickstart
 
 ```bash
-git clone https://github.com/sehscape/Furwise-Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety.git furwise
+git clone https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety.git furwise
 cd furwise
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt && pip install -e . --no-deps
@@ -445,7 +515,7 @@ furwise ask "Can I give my cat Rimadyl?"
 streamlit run app/streamlit_app.py           # demo UI, with a "compare with basic RAG" toggle
 uvicorn furwise.api:app --port 8000          # REST API: /ask, /lookup, /health
 furwise eval run --stage stage3 --judge      # evaluate a stage (cached, resumable)
-pytest                                       # 46 unit tests, no network or models needed
+pytest                                       # 45 unit tests, no network or models needed
 ```
 
 **Free hosting**: the app runs the whole pipeline in-process, so it fits one free

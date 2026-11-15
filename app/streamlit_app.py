@@ -146,7 +146,7 @@ def sidebar() -> bool:
         )
         compare = st.toggle(
             "Compare with a basic RAG bot",
-            value=False,
+            value=st.query_params.get("compare") == "1",
             help="Also answer with Stage 0 (dense retrieval + LLM, no safety "
             "layer) to see what Furwise adds.",
         )
@@ -195,6 +195,9 @@ def main() -> None:
                     if st.button(q, key=q, use_container_width=True):
                         st.session_state["question"] = q
 
+        # Shareable links: /?q=Can+I+give+my+cat+Rimadyl%3F&compare=1
+        if "question" not in st.session_state and st.query_params.get("q"):
+            st.session_state["question"] = st.query_params["q"]
         question = st.text_input(
             "Your question", key="question", placeholder="e.g. Can I give my cat Rimadyl?"
         )

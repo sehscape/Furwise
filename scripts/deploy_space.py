@@ -36,7 +36,7 @@ citation on every claim.
 
 **For information only. Not a substitute for veterinary advice.**
 
-Code, architecture and evaluation: https://github.com/sehscape/Furwise-Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety
+Code, architecture and evaluation: https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety
 """
 
 

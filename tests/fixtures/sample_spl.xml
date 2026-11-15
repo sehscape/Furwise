@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic SPL label written for tests. Not a real product. -->
+<document xmlns="urn:hl7-org:v3">
+  <setId root="00000000-test-0000-0000-000000000001"/>
+  <versionNumber value="3"/>
+  <effectiveTime value="20250102"/>
+  <title>TESTOFEN (TESTOPROFEN) TABLET, CHEWABLE [EXAMPLE ANIMAL HEALTH]</title>
+  <author><assignedEntity><representedOrganization><name>Example Animal Health</name></representedOrganization></assignedEntity></author>
+  <component><structuredBody>
+    <component><section>
+      <code code="48780-1" displayName="SPL PRODUCT DATA ELEMENTS SECTION"/>
+      <subject><manufacturedProduct><manufacturedProduct>
+        <name>Testofen</name>
+        <formCode displayName="TABLET, CHEWABLE"/>
+        <asEntityWithGeneric><genericMedicine><name>testoprofen</name></genericMedicine></asEntityWithGeneric>
+        <ingredient classCode="ACTIB"><ingredientSubstance><name>TESTOPROFEN</name>
+          <activeMoiety><activeMoiety><name>TESTOPROFEN</name></activeMoiety></activeMoiety>
+        </ingredientSubstance></ingredient>
+      </manufacturedProduct></manufacturedProduct></subject>
+    </section></component>
+    <component><section>
+      <code code="42229-5" displayName="SPL UNCLASSIFIED SECTION"/>
+      <text>
+        <paragraph>Chewable Tablets</paragraph>
+        <paragraph>For oral use in dogs only</paragraph>
+        <paragraph>Caution: Federal law restricts this drug to use by or on the order of a licensed veterinarian. Do not use in cats.</paragraph>
+      </text>
+    </section></component>
+    <component><section>
+      <code code="34067-9" displayName="INDICATIONS &amp; USAGE SECTION"/>
+      <title>INDICATIONS</title>
+      <text><paragraph>Testofen is indicated for the relief of pain associated with osteoarthritis in dogs.</paragraph></text>
+    </section></component>
+    <component><section>
+      <code code="42229-5" displayName="SPL UNCLASSIFIED SECTION"/>
+      <text>
+        <paragraph><content styleCode="bold">WARNINGS:</content> Keep out of reach of children. Not for use in cats.</paragraph>
+        <paragraph><content styleCode="bold">Drug Interactions:</content> Concomitant use with corticosteroids should be avoided.</paragraph>
+      </text>
+    </section></component>
+    <component><section>
+      <code code="34068-7" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+      <title>DOSAGE AND ADMINISTRATION</title>
+      <text>
+        <paragraph>The recommended dose is 2 mg/lb once daily.<br/>Give with food.</paragraph>
+        <table>
+          <tr><th>Weight (lb)</th><th>Tablets</th></tr>
+          <tr><td>10 to 20</td><td>1</td></tr>
+          <tr><td>21 to 40</td><td>2</td></tr>
+        </table>
+      </text>
+    </section></component>
+    <component><section>
+      <code code="51945-4" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+      <text><paragraph>NDC 0000-0000 Testofen 25 mg</paragraph></text>
+    </section></component>
+  </structuredBody></component>
+</document>

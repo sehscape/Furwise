@@ -84,10 +84,10 @@ kittens has not been evaluated") or an *only* statement ("for oral use in dogs o
 
 * **Label target species** come from an evidence ladder: Indications → explicit use
   statements → Dosage → title. There is deliberately **no full-text fallback**: a label
-  that cannot be placed is excluded rather than guessed (67 were, mostly livestock).
+  that cannot be placed is excluded rather than guessed (75 were, mostly livestock or other species).
 * An *only* statement narrows the target but never removes a species the Indications
   explicitly name. When the two disagree, the label is kept with both and flagged
-  (4 labels).
+  (5 labels).
 * Each **chunk** stores `species_target` (who the label is for) and `caution_species`
   (who this chunk warns about, including species ruled out by an *only* statement).
 

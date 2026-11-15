@@ -63,6 +63,17 @@ def test_warned_species_from_only_statement():
     assert sp.warned_species("For oral use in dogs only.", {"dog"}) == {"cat"}
 
 
+def test_other_animal_indications_never_fall_back_to_dosage_tables():
+    prof = sp.profile(
+        {
+            "indications": "Indicated for post-procedural pain in captive rodents and ferrets.",
+            "dosage": "Prairie dogs | 0.48 mg/kg",
+        },
+        "ETHIQA XR (BUPRENORPHINE) INJECTION",
+    )
+    assert prof.target == []
+
+
 def test_no_species_evidence_means_no_target():
     prof = sp.profile({"indications": "Indicated for horses."}, "EQUI-THING PASTE")
     assert prof.target == []

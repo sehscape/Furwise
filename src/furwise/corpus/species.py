@@ -25,7 +25,14 @@ _WORDS = {
 # Parasite and pest names that contain a species word but are not about the pet.
 _NOT_PETS = re.compile(
     r"\b(american |brown )?dog ticks?\b|\bdog (tape|round|hook)worms?\b|\bcat fleas?\b"
-    r"|\bcat-?scratch\b|\bcanine (distemper|parvovirus|adenovirus)\b",
+    r"|\bcat-?scratch\b|\bcanine (distemper|parvovirus|adenovirus)\b|\bprairie dogs?\b",
+    re.I,
+)
+# Animals other than dogs and cats. If a label's Indications name only these, the
+# label is not a dog/cat label, whatever its dosing tables mention.
+_OTHER_ANIMALS = re.compile(
+    r"\b(horses?|equine|foals?|cattle|calves|cows?|swine|pigs?|sheep|goats?|poultry|chickens?|"
+    r"turkeys?|rodents?|ferrets?|rabbits?|primates?|deer|cervidae|elk|fish|birds?)\b",
     re.I,
 )
 _CAUTION = re.compile(
@@ -134,6 +141,8 @@ def profile(sections: dict[str, str], title: str) -> SpeciesProfile:
         ("title", mentions(title)),
     ]
     target, evidence = set(), "none"
+    if not ladder[0][1] and _OTHER_ANIMALS.search(indications):
+        ladder = []  # indicated for other animals only: no fallback to tables or titles
     for rung, found in ladder:
         if found:
             target, evidence = found, rung

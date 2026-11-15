@@ -30,12 +30,38 @@ from furwise.settings import RUNS
 
 log = logging.getLogger(__name__)
 
+# Free tiers. Limits are per minute here; the daily caps are what make a full
+# evaluation take more than one day on a single provider (see docs/evaluation.md).
 PROVIDERS = {
-    "groq": {"base_url": "https://api.groq.com/openai/v1", "key_env": "GROQ_API_KEY", "tpm": 8000},
-    "openai_compatible": {"base_url": "", "key_env": "FURWISE_API_KEY", "tpm": 0},
-    "ollama": {"base_url": "http://127.0.0.1:11434", "key_env": "", "tpm": 0},
+    "groq": {
+        "base_url": "https://api.groq.com/openai/v1",
+        "key_env": "GROQ_API_KEY",
+        "tpm": 8000,
+        "rpm": 30,
+        "model": {"GEN": "qwen/qwen3.8-27b", "JUDGE": "openai/gpt-oss-120b"},
+    },
+    "gemini": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+        "key_env": "GEMINI_API_KEY",
+        "tpm": 0,
+        "rpm": 10,
+        "model": {"GEN": "gemini-2.5-flash-lite", "JUDGE": "gemini-2.5-flash"},
+    },
+    "openai_compatible": {
+        "base_url": "",
+        "key_env": "FURWISE_API_KEY",
+        "tpm": 0,
+        "rpm": 0,
+        "model": {},
+    },
+    "ollama": {
+        "base_url": "http://127.0.0.1:11434",
+        "key_env": "",
+        "tpm": 0,
+        "rpm": 0,
+        "model": {"GEN": "llama3.2", "JUDGE": "llama3.2"},
+    },
 }
-DEFAULT_MODELS = {"GEN": "qwen/qwen3.8-27b", "JUDGE": "openai/gpt-oss-120b"}
 CACHE_DIR = RUNS / "llm_cache"
 _THINK = re.compile(r"<think>.*?</think>", re.S)
 
@@ -51,6 +77,7 @@ class LLMConfig:
     base_url: str
     api_key: str = ""
     tpm: int = 0
+    rpm: int = 0
     reasoning_effort: str = ""
 
     @property
@@ -72,13 +99,16 @@ def config_from_env(role: str = "GEN") -> LLMConfig:
     base_url = env("BASE_URL", preset["base_url"]).rstrip("/")
     if not base_url:
         raise LLMError(f"set FURWISE_{role}_BASE_URL for provider {provider}")
-    model = env("MODEL", DEFAULT_MODELS.get(role, "") if provider == "groq" else "llama3.2")
+    model = env("MODEL", preset["model"].get(role, ""))
+    if not model:
+        raise LLMError(f"set FURWISE_{role}_MODEL for provider {provider}")
     return LLMConfig(
         provider=provider,
         model=model,
         base_url=base_url,
         api_key=key,
         tpm=int(env("TPM", str(preset["tpm"]))),
+        rpm=int(env("RPM", str(preset["rpm"]))),
         reasoning_effort=env("REASONING_EFFORT", "low" if "gpt-oss" in model else ""),
     )
 
@@ -102,6 +132,7 @@ class LLMClient:
             self.session.headers["Authorization"] = f"Bearer {config.api_key}"
         self._lock = threading.Lock()
         self._window: deque[tuple[float, int]] = deque()
+        self._last = 0.0
 
     @classmethod
     def from_env(cls, role: str = "GEN") -> LLMClient:
@@ -109,12 +140,18 @@ class LLMClient:
 
     # -------------------------------------------------------------- pacing
     def _wait_for_budget(self, tokens: int) -> float:
-        """Sliding one-minute token budget: wait *before* a request instead of
-        collecting 429s. Returns seconds waited."""
-        if self.config.tpm <= 0:
-            return 0.0
+        """Requests/minute spacing plus a sliding one-minute token budget: wait
+        *before* a request instead of collecting 429s. Returns seconds waited."""
         waited = 0.0
         with self._lock:
+            if self.config.rpm > 0:
+                gap = self._last + 60.0 / self.config.rpm - time.monotonic()
+                if gap > 0:
+                    time.sleep(gap)
+                    waited += gap
+                self._last = time.monotonic()
+            if self.config.tpm <= 0:
+                return waited
             while True:
                 now = time.monotonic()
                 while self._window and now - self._window[0][0] > 60:

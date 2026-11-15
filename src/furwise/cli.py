@@ -77,7 +77,19 @@ def _eval(args) -> None:
 
 def main(argv: list[str] | None = None) -> None:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    for noisy in ("httpx", "chromadb", "sentence_transformers", "urllib3"):
+    for noisy in (
+        "httpx",
+        "httpcore",
+        "chromadb",
+        "sentence_transformers",
+        "urllib3",
+        "huggingface_hub",
+        "filelock",
+        "bm25s",
+        "llama_index",
+        "ragas",
+        "fsspec",
+    ):
         logging.getLogger(noisy).setLevel(logging.WARNING)
 
     p = argparse.ArgumentParser(prog="furwise", description=__doc__)

@@ -151,7 +151,8 @@ def run(
         }
     )
     (out_dir / "summary.json").write_text(json.dumps(summary, indent=2), "utf-8")
-    _merge(stage, summary, retrieval_only)
+    if limit is None:  # only complete runs feed the results table
+        _merge(stage, summary, retrieval_only)
     print(json.dumps({k: v for k, v in summary.items() if k != "by_category"}, indent=2))
     return summary
 

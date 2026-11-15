@@ -1,0 +1,831 @@
+# Furwise evaluation set.
+#
+# Every answerable question points at the exact source text that supports it:
+#   gold: [{entity, section, quote}]
+# The quote is matched inside chunks at evaluation time (case/space insensitive), so
+# gold survives re-chunking, and `furwise eval validate` fails as soon as a quote
+# stops matching. References were written from that text only, never from general
+# veterinary knowledge.
+#
+# expect:  answer    answer with citations
+#          restrict  the label rules this species out: the answer must say so
+#          emergency the answer must START with "Contact your vet or a pet poison helpline"
+#          decline   outside the sources: must not answer
+# species: the animal the question is about (dog / cat), used for species mix-up checks.
+
+questions:
+  # ------------------------------------------------------------------ label facts
+  - id: L01
+    category: label_fact
+    question: What is Rimadyl used for in dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: carprofen, section: indications, quote: "relief of pain and inflammation associated with osteoarthritis"}]
+    reference: Rimadyl is indicated for the relief of pain and inflammation associated with osteoarthritis and for the control of postoperative pain associated with soft tissue and orthopedic surgeries in dogs.
+
+  - id: L02
+    category: label_fact
+    question: What is the recommended oral dose of Rimadyl for dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: carprofen, section: dosage, quote: "The recommended dosage for oral administration to dogs is 2 mg/lb"}]
+    reference: The label recommends 2 mg/lb of body weight daily, given once daily or divided as 1 mg/lb twice daily.
+
+  - id: L03
+    category: label_fact
+    question: Can my dog take Rimadyl together with a corticosteroid like prednisone?
+    species: dog
+    expect: answer
+    gold: [{entity: carprofen, section: precautions, quote: "such as other NSAIDs or corticosteroids, should be avoided"}]
+    reference: The label says concomitant use of Rimadyl with other anti-inflammatory drugs, such as other NSAIDs or corticosteroids, should be avoided because of the potential increase of adverse reactions, including gastrointestinal ulcerations and/or perforations.
+
+  - id: L04
+    category: label_fact
+    question: What side effects should I watch for while my dog is on Rimadyl?
+    species: dog
+    expect: answer
+    gold: [{entity: carprofen, section: owner_info, quote: "Adverse reactions may include decreased appetite, vomiting, diarrhea"}]
+    reference: The owner information lists decreased appetite, vomiting, diarrhea, dark or tarry stools, increased water consumption, increased urination, pale gums, jaundice, lethargy, incoordination and seizures, among others.
+
+  - id: L05
+    category: label_fact
+    question: How old does a dog have to be to use Apoquel?
+    species: dog
+    expect: answer
+    gold: [{entity: oclacitinib, section: warnings, quote: "not for use in dogs less than 12 months of age"}]
+    reference: Apoquel is not for use in dogs less than 12 months of age.
+
+  - id: L06
+    category: label_fact
+    question: Does Apoquel make dogs more prone to infections?
+    species: dog
+    expect: answer
+    gold: [{entity: oclacitinib, section: warnings, quote: "may increase susceptibility to infection, including demodicosis"}]
+    reference: The label warns that Apoquel may increase susceptibility to infection, including demodicosis, and exacerbation of neoplastic conditions.
+
+  - id: L07
+    category: label_fact
+    question: What is the Apoquel dose for dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: oclacitinib, section: dosage, quote: "0.18 to 0.27 mg oclacitinib/lb"}]
+    reference: 0.18 to 0.27 mg oclacitinib/lb (0.4 to 0.6 mg/kg) body weight, orally, twice daily for up to 14 days, then once daily for maintenance.
+
+  - id: L08
+    category: label_fact
+    question: What does Galliprant treat?
+    species: dog
+    expect: answer
+    gold: [{entity: grapiprant, section: indications, quote: "control of pain and inflammation associated with osteoarthritis in dogs"}]
+    reference: Galliprant is indicated for the control of pain and inflammation associated with osteoarthritis in dogs.
+
+  - id: L09
+    category: label_fact
+    question: Can Galliprant cause vomiting in dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: grapiprant, section: precautions, quote: "Adverse reactions in dogs receiving GALLIPRANT may include vomiting"}]
+    reference: Yes. Adverse reactions in dogs receiving Galliprant may include vomiting, diarrhea, decreased appetite, mucoid, watery or bloody stools, and decreases in serum albumin and total protein.
+
+  - id: L10
+    category: label_fact
+    question: How often is the Bravecto chew given to dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: fluralaner, section: dosage, quote: "administered orally as a single dose every 12 weeks"}]
+    reference: Bravecto chews are given orally as a single dose every 12 weeks.
+
+  - id: L11
+    category: label_fact
+    question: Can I give Simparica to my 4 month old puppy?
+    species: dog
+    expect: answer
+    gold: [{entity: sarolaner, section: warnings, quote: "should not be used in dogs less than 6 months of age"}]
+    reference: No. The label says Simparica should not be used in dogs less than 6 months of age.
+
+  - id: L12
+    category: label_fact
+    question: Is NexGard safe for a dog with a history of seizures?
+    species: dog
+    expect: answer
+    gold: [{entity: afoxolaner, section: precautions, quote: "Use with caution in dogs with a history of seizures or neurologic disorders"}]
+    reference: The label says the isoxazoline class has been associated with neurologic adverse reactions including tremors, ataxia and seizures, and to use with caution in dogs with a history of seizures or neurologic disorders.
+
+  - id: L13
+    category: label_fact
+    question: Can Trifexis be given along with ivermectin?
+    species: dog
+    expect: answer
+    gold: [{entity: spinosad-milbemycin, section: warnings, quote: "concomitant extra-label use of ivermectin with spinosad"}]
+    reference: The label warns that serious adverse reactions have been reported following concomitant extra-label use of ivermectin with spinosad alone, a component of Trifexis.
+
+  - id: L14
+    category: label_fact
+    question: Is Heartgard Plus safe for Collies?
+    species: dog
+    expect: answer
+    gold: [{entity: ivermectin-pyrantel, section: overdose_safety, quote: "no signs of toxicity at 10 times the recommended dose"}]
+    reference: Heartgard demonstrated no signs of toxicity at 10 times the recommended dose in sensitive Collies, and the label supports its safety in dogs, including Collies, when used as recommended.
+
+  - id: L15
+    category: label_fact
+    question: From what age can puppies take Heartgard Plus?
+    species: dog
+    expect: answer
+    gold: [{entity: ivermectin-pyrantel, section: dosage, quote: "recommended for dogs 6 weeks of age and older"}]
+    reference: Heartgard Plus is recommended for dogs 6 weeks of age and older.
+
+  - id: L16
+    category: label_fact
+    question: What is Cerenia used for in dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: maropitant, section: indications, quote: "prevention of acute vomiting and the prevention of vomiting due to motion sickness in dogs"}]
+    reference: Cerenia tablets are indicated for the prevention of acute vomiting and the prevention of vomiting due to motion sickness in dogs.
+
+  - id: L17
+    category: label_fact
+    question: Can I use Cerenia for car sickness in my 2 month old puppy?
+    species: dog
+    expect: answer
+    gold: [{entity: maropitant, section: dosage, quote: "Motion Sickness in dogs 4 months"}]
+    reference: The motion sickness dosing on the label is for dogs 4 months of age and older.
+
+  - id: L18
+    category: label_fact
+    question: When should Vetmedin not be given to a dog?
+    species: dog
+    expect: answer
+    gold: [{entity: pimobendan, section: contraindications, quote: "in cases of hypertrophic cardiomyopathy, aortic stenosis"}]
+    reference: Do not administer Vetmedin in cases of hypertrophic cardiomyopathy, aortic stenosis, or any other clinical condition where an augmentation of cardiac output is inappropriate.
+
+  - id: L19
+    category: label_fact
+    question: What is Sileo used for?
+    species: dog
+    expect: answer
+    gold: [{entity: dexmedetomidine, section: indications, quote: "SILEO is indicated for the treatment of noise aversion in dogs"}]
+    reference: Sileo is indicated for the treatment of noise aversion in dogs.
+
+  - id: L20
+    category: label_fact
+    question: Which diabetic cats should not be given Bexacat?
+    species: cat
+    expect: answer
+    gold: [{entity: bexagliflozin, section: contraindications, quote: "Do not use Bexacat in cats with diabetes mellitus who have previously been treated with insulin"}]
+    reference: Do not use Bexacat in cats that have previously been treated with insulin, are receiving insulin, or have insulin-dependent diabetes mellitus.
+
+  - id: L21
+    category: label_fact
+    question: What is Elura prescribed for in cats?
+    species: cat
+    expect: answer
+    gold: [{entity: capromorelin, section: indications, quote: "management of weight loss in cats with chronic kidney disease"}]
+    reference: Elura is for management of weight loss in cats with chronic kidney disease.
+
+  - id: L22
+    category: label_fact
+    question: How young can a kitten be to take Capstar?
+    species: cat
+    expect: answer
+    gold: [{entity: nitenpyram, section: dosage, quote: "2 pounds of body weight or greater and 4 weeks of age and older"}]
+    reference: Capstar is for dogs, puppies, cats and kittens 2 pounds of body weight or greater and 4 weeks of age and older.
+
+  - id: L23
+    category: label_fact
+    question: How long does one Convenia injection keep working?
+    species: dog
+    expect: answer
+    gold: [{entity: cefovecin, section: dosage, quote: "therapeutic concentrations are maintained for approximately 7 days"}]
+    reference: After an injection, therapeutic concentrations are maintained for approximately 7 days for Pasteurella multocida infections, and for 7 to 14 days for some other bacteria.
+
+  - id: L24
+    category: label_fact
+    question: Can Baytril be given at the same time as antacids or mineral supplements?
+    species: dog
+    expect: answer
+    gold: [{entity: enrofloxacin, section: drug_interactions, quote: "metal cations (e.g., aluminum, calcium, iron, magnesium) may reduce the absorption"}]
+    reference: The label says compounds that contain metal cations (aluminum, calcium, iron, magnesium) may reduce the absorption of quinolone drugs from the intestinal tract.
+
+  - id: L25
+    category: label_fact
+    question: What is the maximum daily Baytril dose for cats?
+    species: cat
+    expect: answer
+    gold: [{entity: enrofloxacin, section: warnings, quote: "Do not exceed 5 mg/kg of body weight per day in cats"}]
+    reference: Do not exceed 5 mg/kg of body weight per day in cats; in rare instances, use in cats has been associated with retinal toxicity.
+
+  - id: L26
+    category: label_fact
+    question: What doses of Rimadyl were tested in the long-term safety studies?
+    species: dog
+    expect: answer
+    gold: [{entity: carprofen, section: overdose_safety, quote: "up to 11.4 mg/lb/day (5.7 times the recommended total daily dose"}]
+    reference: In 13 and 52 week safety studies, dogs were given up to 11.4 mg/lb/day, 5.7 times the recommended total daily dose of 2 mg/lb.
+
+  - id: L27
+    category: label_fact
+    question: How long does topical Bravecto protect a cat against fleas?
+    species: cat
+    expect: answer
+    gold: [{entity: fluralaner, section: indications, quote: "for 12 weeks in cats and kittens 12 weeks of age and older"}]
+    reference: Bravecto topical for cats treats and prevents flea infestations for 12 weeks in cats and kittens 12 weeks of age and older, weighing 2.6 pounds or more.
+
+  - id: L28
+    category: label_fact
+    question: Can my cat be given repeated doses of meloxicam after surgery?
+    species: cat
+    expect: restrict
+    gold: [{entity: meloxicam, section: contraindications, quote: "Additional doses of meloxicam or other NSAIDs in cats are contraindicated"}]
+    reference: No. Additional doses of meloxicam or other NSAIDs in cats are contraindicated, and repeated use of meloxicam in cats has been associated with acute renal failure and death.
+
+  - id: L29
+    category: label_fact
+    question: How often do I give NexGard to my dog?
+    species: dog
+    expect: answer
+    gold: [{entity: afoxolaner, section: dosage, quote: "given orally once a month"}]
+    reference: NexGard is given orally once a month, at a minimum dosage of 1.14 mg/lb (2.5 mg/kg).
+
+  - id: L30
+    category: label_fact
+    question: Should Vetoryl capsules be given with food?
+    species: dog
+    expect: answer
+    gold: [{entity: trilostane, section: dosage, quote: "VETORYL Capsules should be administered with food"}]
+    reference: Yes, Vetoryl capsules should be administered with food.
+
+  - id: L31
+    category: label_fact
+    question: What is Proin used for in dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: phenylpropanolamine, section: indications, quote: "control of urinary incontinence due to urethral sphincter hypotonus in dogs"}]
+    reference: Proin is indicated for the control of urinary incontinence due to urethral sphincter hypotonus in dogs.
+
+  - id: L32
+    category: label_fact
+    question: What is methimazole (ReguZol) used for in cats?
+    species: cat
+    expect: answer
+    gold: [{entity: methimazole, section: indications, quote: "treatment of hyperthyroidism in cats"}]
+    reference: ReguZol (methimazole) is indicated for the treatment of hyperthyroidism in cats.
+
+  - id: L33
+    category: label_fact
+    question: What does Semintra treat?
+    species: cat
+    expect: answer
+    gold: [{entity: telmisartan, section: indications, quote: "control of systemic hypertension in cats"}]
+    reference: Semintra is indicated for the control of systemic hypertension in cats.
+
+  - id: L34
+    category: label_fact
+    question: From what age can a kitten use Credelio CAT?
+    species: cat
+    expect: answer
+    gold: [{entity: lotilaner, section: indications, quote: "cats and kittens 8 weeks of age and older"}]
+    reference: Credelio CAT is for cats and kittens 8 weeks of age and older, weighing 2.0 pounds or greater.
+
+  # ------------------------------------------------------------------ species traps
+  - id: T01
+    category: species_trap
+    question: Can I give my cat Rimadyl for pain?
+    species: cat
+    expect: restrict
+    gold: [{entity: carprofen, section: warnings, quote: "For use in dogs only. Do not use in cats."}]
+    reference: No. The Rimadyl label says it is for use in dogs only. Do not use in cats.
+
+  - id: T02
+    category: species_trap
+    question: My cat has arthritis. Can I use the Metacam oral suspension I have for my dog?
+    species: cat
+    expect: restrict
+    gold: [{entity: meloxicam, section: contraindications, quote: "Do not use METACAM Oral Suspension in cats"}]
+    reference: No. Do not use Metacam Oral Suspension in cats; acute renal failure and death have been associated with the use of meloxicam in cats.
+
+  - id: T03
+    category: species_trap
+    question: Is Deramaxx okay to give a cat?
+    species: cat
+    expect: restrict
+    gold: [{entity: deracoxib, section: warnings, quote: "Do not use in cats"}]
+    reference: No. The Deramaxx label says do not use in cats.
+
+  - id: T04
+    category: species_trap
+    question: Can my cat take Galliprant?
+    species: cat
+    expect: restrict
+    gold: [{entity: grapiprant, section: label_header, quote: "For oral use in dogs only"}]
+    reference: Galliprant is labeled for oral use in dogs only.
+
+  - id: T05
+    category: species_trap
+    question: Can I give Veraflox to my dog?
+    species: dog
+    expect: restrict
+    gold: [{entity: pradofloxacin, section: contraindications, quote: "DO NOT USE IN DOGS"}]
+    reference: No. The Veraflox oral suspension label says do not use in dogs.
+
+  - id: T06
+    category: species_trap
+    question: Can I put Advantage Multi for Dogs on my cat?
+    species: cat
+    expect: restrict
+    gold: [{entity: imidacloprid-moxidectin, section: warnings, quote: "Do not use this product (containing 2.5 % moxidectin) on cats"}]
+    reference: No. Advantage Multi for Dogs contains 2.5% moxidectin and the label says not to use it on cats.
+
+  - id: T07
+    category: species_trap
+    question: Can I use Simbadol for my dog's pain after surgery?
+    species: dog
+    expect: restrict
+    gold: [{entity: buprenorphine, section: label_header, quote: "For Use in Cats Only"}]
+    reference: Simbadol is labeled for use in cats only.
+
+  - id: T08
+    category: species_trap
+    question: Can my dog get Solensia injections for osteoarthritis?
+    species: dog
+    expect: restrict
+    gold: [{entity: frunevetmab, section: label_header, quote: "for subcutaneous injection in cats only"}]
+    reference: Solensia is a feline antibody labeled for subcutaneous injection in cats only.
+
+  - id: T09
+    category: species_trap
+    question: Is Librela approved for cats?
+    species: cat
+    expect: restrict
+    gold: [{entity: bedinvetmab, section: label_header, quote: "for subcutaneous use in dogs only"}]
+    reference: No. Librela is a canine antibody labeled for subcutaneous use in dogs only.
+
+  - id: T10
+    category: species_trap
+    question: Can I give my cat Apoquel for itching?
+    species: cat
+    expect: restrict
+    gold: [{entity: oclacitinib, section: label_header, quote: "For oral use in dogs only"}]
+    reference: Apoquel is labeled for oral use in dogs only.
+
+  - id: T11
+    category: species_trap
+    question: Can Mirataz be used on a dog that won't eat?
+    species: dog
+    expect: restrict
+    gold: [{entity: mirtazapine, section: label_header, quote: "For topical application in cats only"}]
+    reference: Mirataz is labeled for topical application in cats only.
+
+  - id: T12
+    category: species_trap
+    question: Can I give my dog Onsior tablets?
+    species: dog
+    expect: restrict
+    gold: [{entity: robenacoxib, section: label_header, quote: "For Oral Use In Cats Only"}]
+    reference: Onsior tablets are labeled for oral use in cats only. (The Onsior injection is a different product.)
+
+  - id: T13
+    category: species_trap
+    question: Can I use NexGard COMBO on my dog?
+    species: dog
+    expect: restrict
+    gold: [{entity: esafoxolaner-eprinomectin-praziquantel, section: label_header, quote: "For topical use in cats only"}]
+    reference: NexGard COMBO is labeled for topical use in cats only.
+
+  - id: T14
+    category: species_trap
+    question: Can I use Clevor eye drops to make my cat vomit?
+    species: cat
+    expect: restrict
+    gold: [{entity: ropinirole, section: label_header, quote: "For ophthalmic use in dogs only"}]
+    reference: Clevor is labeled for ophthalmic use in dogs only.
+
+  - id: T15
+    category: species_trap
+    question: Can I give my cat Vetoryl?
+    species: cat
+    expect: restrict
+    gold: [{entity: trilostane, section: label_header, quote: "for oral use in dogs only"}]
+    reference: Vetoryl is labeled as an adrenocortical suppressant for oral use in dogs only.
+
+  - id: T16
+    category: species_trap
+    question: Is an Easter lily toxic to cats?
+    species: cat
+    expect: restrict
+    gold: [{entity: "plant:easter-lily", section: plant_toxicity, quote: "Toxic to Cats"}]
+    reference: Yes. The ASPCA lists Easter lily as toxic to cats; clinical signs include vomiting, inappetence, lethargy, kidney failure, and death is possible.
+
+  - id: T17
+    category: species_trap
+    question: Is an Easter lily dangerous for dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:easter-lily", section: plant_toxicity, quote: "Non-Toxic to Dogs"}]
+    reference: The ASPCA lists Easter lily as non-toxic to dogs (it is toxic to cats).
+
+  # ------------------------------------------------------------------ name variants
+  - id: N01
+    category: name_variant
+    question: is rimadil safe for my dogs arthritis
+    species: dog
+    expect: answer
+    entity: carprofen
+    gold: [{entity: carprofen, section: indications, quote: "relief of pain and inflammation associated with osteoarthritis"}]
+    reference: Rimadyl (carprofen) is indicated for the relief of pain and inflammation associated with osteoarthritis in dogs.
+
+  - id: N02
+    category: name_variant
+    question: what is galiprant used for
+    species: dog
+    expect: answer
+    entity: grapiprant
+    gold: [{entity: grapiprant, section: indications, quote: "control of pain and inflammation associated with osteoarthritis in dogs"}]
+    reference: Galliprant (grapiprant) is indicated for the control of pain and inflammation associated with osteoarthritis in dogs.
+
+  - id: N03
+    category: name_variant
+    question: how often do i give nexguard to my dog
+    species: dog
+    expect: answer
+    entity: afoxolaner
+    gold: [{entity: afoxolaner, section: dosage, quote: "given orally once a month"}]
+    reference: NexGard (afoxolaner) is given orally once a month.
+
+  - id: N04
+    category: name_variant
+    question: What is the carprofen dose for dogs?
+    species: dog
+    expect: answer
+    entity: carprofen
+    gold: [{entity: carprofen, section: dosage, quote: "2 mg/lb"}]
+    reference: The carprofen (Rimadyl) label dose is 2 mg/lb of body weight daily, or 1 mg/lb twice daily.
+
+  - id: N05
+    category: name_variant
+    question: What is oclacitinib used for in dogs?
+    species: dog
+    expect: answer
+    entity: oclacitinib
+    gold: [{entity: oclacitinib, section: indications, quote: "Control of pruritus associated with allergic dermatitis"}]
+    reference: Oclacitinib (Apoquel) is for control of pruritus associated with allergic dermatitis and control of atopic dermatitis in dogs at least 12 months of age.
+
+  - id: N06
+    category: name_variant
+    question: is apoquel ok for a puppy under one year
+    species: dog
+    expect: answer
+    entity: oclacitinib
+    gold: [{entity: oclacitinib, section: warnings, quote: "not for use in dogs less than 12 months of age"}]
+    reference: No. Apoquel is not for use in dogs less than 12 months of age.
+
+  - id: N07
+    category: name_variant
+    question: maropitant for car sickness in dogs?
+    species: dog
+    expect: answer
+    entity: maropitant
+    gold: [{entity: maropitant, section: indications, quote: "vomiting due to motion sickness in dogs"}]
+    reference: Maropitant (Cerenia) tablets are indicated for the prevention of vomiting due to motion sickness in dogs.
+
+  - id: N08
+    category: name_variant
+    question: Is Novox safe for cats?
+    species: cat
+    expect: restrict
+    entity: carprofen
+    gold: [{entity: carprofen, section: warnings, quote: "Do not use in cats"}]
+    reference: Novox is a carprofen product. The carprofen (Rimadyl) label says for use in dogs only, do not use in cats.
+
+  - id: N09
+    category: name_variant
+    question: when should pimobendan not be used
+    species: dog
+    expect: answer
+    entity: pimobendan
+    gold: [{entity: pimobendan, section: contraindications, quote: "hypertrophic cardiomyopathy, aortic stenosis"}]
+    reference: Pimobendan (Vetmedin) should not be given in cases of hypertrophic cardiomyopathy, aortic stenosis, or other conditions where an augmentation of cardiac output is inappropriate.
+
+  - id: N10
+    category: name_variant
+    question: Are Lilium plants toxic to cats?
+    species: cat
+    expect: restrict
+    entity: "plant:easter-lily"
+    gold: [{entity: "plant:easter-lily", section: plant_toxicity, quote: "Toxic to Cats"}]
+    reference: Lilium species such as the Easter lily (Lilium longiflorum) are listed by the ASPCA as toxic to cats.
+
+  - id: N11
+    category: name_variant
+    question: is brevecto safe for cats
+    species: cat
+    expect: answer
+    entity: fluralaner
+    gold: [{entity: fluralaner, section: indications, quote: "for 12 weeks in cats and kittens 12 weeks of age and older"}]
+    reference: There is a Bravecto (fluralaner) topical solution for cats, indicated for cats and kittens 12 weeks of age and older weighing 2.6 pounds or more.
+
+  - id: N12
+    category: name_variant
+    question: what is cerenia for
+    species: dog
+    expect: answer
+    entity: maropitant
+    gold: [{entity: maropitant, section: indications, quote: "prevention of acute vomiting"}]
+    reference: Cerenia (maropitant) is indicated for the prevention of acute vomiting and of vomiting due to motion sickness.
+
+  - id: N13
+    category: name_variant
+    question: Can trilostane be given without food?
+    species: dog
+    expect: answer
+    entity: trilostane
+    gold: [{entity: trilostane, section: dosage, quote: "should be administered with food"}]
+    reference: The Vetoryl (trilostane) label says the capsules should be administered with food.
+
+  - id: N14
+    category: name_variant
+    question: is fluralaner given monthly for dogs
+    species: dog
+    expect: answer
+    entity: fluralaner
+    gold: [{entity: fluralaner, section: dosage, quote: "as a single dose every 12 weeks"}]
+    reference: No. Bravecto (fluralaner) is given as a single dose every 12 weeks.
+
+  # ------------------------------------------------------------------ emergencies
+  - id: E01
+    category: emergency
+    question: My dog ate a whole bottle of Rimadyl chewables. What should I do?
+    species: dog
+    expect: emergency
+    gold: [{entity: carprofen, section: overdose_safety, quote: "11.4 mg/lb/day"}]
+
+  - id: E02
+    category: emergency
+    question: My cat chewed an Easter lily leaf and now she is vomiting.
+    species: cat
+    expect: emergency
+    gold: [{entity: "plant:easter-lily", section: plant_toxicity, quote: "Toxic to Cats"}]
+
+  - id: E03
+    category: emergency
+    question: My dog just ate a handful of grapes, is he going to be okay?
+    species: dog
+    expect: emergency
+
+  - id: E04
+    category: emergency
+    question: My puppy got into a chocolate cake on the counter.
+    species: dog
+    expect: emergency
+
+  - id: E05
+    category: emergency
+    question: I think my dog drank antifreeze in the garage.
+    species: dog
+    expect: emergency
+
+  - id: E06
+    category: emergency
+    question: My cat licked the permethrin flea spot-on I put on my dog and is now twitching.
+    species: cat
+    expect: emergency
+
+  - id: E07
+    category: emergency
+    question: I accidentally gave my dog two Simparica chews today.
+    species: dog
+    expect: emergency
+
+  - id: E08
+    category: emergency
+    question: My dog is having seizures after his NexGard dose.
+    species: dog
+    expect: emergency
+    gold: [{entity: afoxolaner, section: precautions, quote: "neurologic adverse reactions including tremors, ataxia, and seizures"}]
+
+  - id: E09
+    category: emergency
+    question: My cat swallowed one of my ibuprofen tablets.
+    species: cat
+    expect: emergency
+
+  - id: E10
+    category: emergency
+    question: my dog ate my tylenol, help!
+    species: dog
+    expect: emergency
+
+  - id: E11
+    category: emergency
+    question: My kitten is drooling and shaking after I put Advantage Multi for Dogs on her.
+    species: cat
+    expect: emergency
+    gold: [{entity: imidacloprid-moxidectin, section: warnings, quote: "Do not use this product (containing 2.5 % moxidectin) on cats"}]
+
+  - id: E12
+    category: emergency
+    question: My dog chewed up part of a sago palm.
+    species: dog
+    expect: emergency
+    gold: [{entity: "plant:sago-palm", section: plant_toxicity, quote: "Toxic to Dogs"}]
+
+  - id: E13
+    category: emergency
+    question: My cat ate a tiger lily from the bouquet on the table.
+    species: cat
+    expect: emergency
+    gold: [{entity: "plant:tiger-lily", section: plant_toxicity, quote: "Toxic to Cats"}]
+
+  # ------------------------------------------------------------------ declines
+  - id: D01
+    category: decline
+    question: Can I give my dog Benadryl for his allergies?
+    species: dog
+    expect: decline
+    note: human medicine, no FDA animal label on DailyMed
+
+  - id: D02
+    category: decline
+    question: What dose of ibuprofen is safe for a dog?
+    species: dog
+    expect: decline
+    note: human medicine, no animal label
+
+  - id: D03
+    category: decline
+    question: Is the Seresto collar safe for cats?
+    species: cat
+    expect: decline
+    note: EPA-registered pesticide, not an FDA label on DailyMed
+
+  - id: D04
+    category: decline
+    question: Can I give Rimadyl to my horse?
+    expect: decline
+    note: other species
+
+  - id: D05
+    category: decline
+    question: What vaccines does my new puppy need?
+    species: dog
+    expect: decline
+    note: vaccines are USDA biologics, outside the sources
+
+  - id: D06
+    category: decline
+    question: My dog has been limping for a week. What is wrong with him?
+    species: dog
+    expect: decline
+    note: diagnosis
+
+  - id: D07
+    category: decline
+    question: Is ivermectin safe for my rabbit?
+    expect: decline
+    note: other species
+
+  - id: D08
+    category: decline
+    question: Can I give my cat melatonin to help her sleep?
+    species: cat
+    expect: decline
+    note: supplement / human product
+
+  - id: D09
+    category: decline
+    question: What is the best grain-free food for a dog with allergies?
+    species: dog
+    expect: decline
+    note: nutrition, outside the sources
+
+  - id: D10
+    category: decline
+    question: Is gabapentin safe for my cat?
+    species: cat
+    expect: decline
+    note: no FDA animal label in the corpus
+
+  - id: D11
+    category: decline
+    question: Does my cat have diabetes if she is drinking a lot of water?
+    species: cat
+    expect: decline
+    note: diagnosis
+
+  - id: D12
+    category: decline
+    question: Is Cytopoint safe for dogs?
+    species: dog
+    expect: decline
+    note: USDA-licensed biologic, not on DailyMed
+
+  - id: D13
+    category: decline
+    question: What's the dose of tramadol for dogs?
+    species: dog
+    expect: decline
+    note: no FDA animal label
+
+  - id: D14
+    category: decline
+    question: Should I euthanize my 15 year old dog?
+    species: dog
+    expect: decline
+    note: a decision for the owner and their veterinarian
+
+  # ------------------------------------------------------------------ plant facts
+  - id: P01
+    category: plant_fact
+    question: Is a spider plant toxic to cats?
+    species: cat
+    expect: answer
+    gold: [{entity: "plant:spider-plant", section: plant_toxicity, quote: "Non-Toxic to Cats"}]
+    reference: The ASPCA lists the spider plant as non-toxic to cats.
+
+  - id: P02
+    category: plant_fact
+    question: What are the signs of sago palm poisoning in dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:sago-palm", section: plant_toxicity, quote: "Clinical Signs"}]
+    reference: Written from the ASPCA sago palm entry (clinical signs).
+
+  - id: P03
+    category: plant_fact
+    question: Is aloe toxic to dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:aloe", section: plant_toxicity, quote: "Toxic to Dogs"}]
+    reference: The ASPCA lists aloe as toxic to dogs.
+
+  - id: P04
+    category: plant_fact
+    question: Are pothos plants toxic to cats?
+    species: cat
+    expect: answer
+    gold: [{entity: "plant:golden-pothos", section: plant_toxicity, quote: "Toxic to Cats"}]
+    reference: The ASPCA lists golden pothos as toxic to cats.
+
+  - id: P05
+    category: plant_fact
+    question: Is a Boston fern safe for my cat?
+    species: cat
+    expect: answer
+    gold: [{entity: "plant:boston-fern", section: plant_toxicity, quote: "Non-Toxic to Cats"}]
+    reference: The ASPCA lists the Boston fern as non-toxic to cats.
+
+  - id: P06
+    category: plant_fact
+    question: What happens if a dog eats azalea?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:azalea", section: plant_toxicity, quote: "Clinical Signs"}]
+    reference: Written from the ASPCA azalea entry (clinical signs).
+
+  - id: P07
+    category: plant_fact
+    question: Is lily of the valley toxic to dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:lily-valley", section: plant_toxicity, quote: "Toxic to Dogs"}]
+    reference: The ASPCA lists lily of the valley as toxic to dogs.
+
+  - id: P08
+    category: plant_fact
+    question: What makes tulips toxic to dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:tulip", section: plant_toxicity, quote: "Toxic Principles"}]
+    reference: Written from the ASPCA tulip entry (toxic principles).
+
+  - id: P09
+    category: plant_fact
+    question: Is a Christmas cactus safe for cats?
+    species: cat
+    expect: answer
+    gold: [{entity: "plant:christmas-cactus", section: plant_toxicity, quote: "Non-Toxic to Cats"}]
+    reference: The ASPCA lists the Christmas cactus as non-toxic to cats.
+
+  - id: P10
+    category: plant_fact
+    question: Is oleander poisonous to dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:oleander", section: plant_toxicity, quote: "Toxic to Dogs"}]
+    reference: The ASPCA lists oleander as toxic to dogs.
+
+  - id: P11
+    category: plant_fact
+    question: Are African violets toxic to cats?
+    species: cat
+    expect: answer
+    gold: [{entity: "plant:african-violet", section: plant_toxicity, quote: "Non-Toxic to Cats"}]
+    reference: The ASPCA lists the African violet as non-toxic to cats.
+
+  - id: P12
+    category: plant_fact
+    question: Is a jade plant toxic to dogs?
+    species: dog
+    expect: answer
+    gold: [{entity: "plant:jade-plant", section: plant_toxicity, quote: "Toxic to Dogs"}]
+    reference: The ASPCA lists the jade plant as toxic to dogs.

@@ -1,0 +1,153 @@
+# Which DailyMed animal labels count as "common dog & cat drugs".
+#
+# NAMES ONLY. This file holds search terms, never dosing, safety or indication
+# facts. Everything Furwise says comes from the label text it downloads.
+#
+# A DailyMed label title joins a group if it contains one of the brands, or all of
+# the ingredients. When several groups match, the more specific one wins
+# (Heartgard Plus -> ivermectin + pyrantel, not plain ivermectin).
+# Brands are listed pioneer-first: the original product is preferred over copies.
+
+groups:
+  # ---- pain and inflammation
+  - {id: carprofen, class: NSAID, ingredients: [carprofen], brands: [Rimadyl, Novox, Vetprofen, Quellin, Carprieve, Levafen, Rovera, Truprofen]}
+  - {id: meloxicam, class: NSAID, ingredients: [meloxicam], brands: [Metacam, Loxicom, OroCAM, Meloxidyl, Meloxivet]}
+  - {id: deracoxib, class: NSAID, ingredients: [deracoxib], brands: [Deramaxx, Doxidyl]}
+  - {id: firocoxib, class: NSAID, ingredients: [firocoxib], brands: [Previcox]}
+  - {id: robenacoxib, class: NSAID, ingredients: [robenacoxib], brands: [Onsior]}
+  - {id: grapiprant, class: NSAID, ingredients: [grapiprant], brands: [Galliprant]}
+  - {id: bedinvetmab, class: pain (antibody), ingredients: [bedinvetmab], brands: [Librela]}
+  - {id: frunevetmab, class: pain (antibody), ingredients: [frunevetmab], brands: [Solensia]}
+  - {id: buprenorphine, class: opioid, ingredients: [buprenorphine], brands: [Simbadol, Zorbium]}
+  - {id: butorphanol, class: opioid, ingredients: [butorphanol], brands: [Torbugesic, Torbutrol, Dolorex]}
+  - {id: bupivacaine, class: local anesthetic, ingredients: [bupivacaine], brands: [Nocita]}
+  - {id: polysulfated-glycosaminoglycan, class: joint, ingredients: [polysulfated glycosaminoglycan], brands: [Adequan]}
+  - {id: methocarbamol, class: muscle relaxant, ingredients: [methocarbamol], brands: [Robaxin]}
+  - {id: pregabalin, class: anxiolytic, ingredients: [pregabalin], brands: [Bonqat]}
+
+  # ---- sedation and anesthesia
+  - {id: dexmedetomidine, class: sedative, ingredients: [dexmedetomidine], brands: [Dexdomitor, Sileo, Dexmedesed]}
+  - {id: medetomidine, class: sedative, ingredients: [medetomidine], brands: [Domitor]}
+  - {id: atipamezole, class: sedation reversal, ingredients: [atipamezole], brands: [Antisedan, Revertidine]}
+  - {id: acepromazine, class: sedative, ingredients: [acepromazine], brands: [PromAce, Aceproject]}
+  - {id: ketamine, class: anesthetic, ingredients: [ketamine], brands: [Ketaset, VetaKet, Zetamine]}
+  - {id: tiletamine-zolazepam, class: anesthetic, ingredients: [tiletamine, zolazepam], brands: [Telazol, Zoletil]}
+  - {id: propofol, class: anesthetic, ingredients: [propofol], brands: [PropoFlo, Rapinovet]}
+  - {id: alfaxalone, class: anesthetic, ingredients: [alfaxalone], brands: [Alfaxan]}
+  - {id: isoflurane, class: anesthetic, ingredients: [isoflurane], brands: [IsoFlo, IsoThesia]}
+  - {id: sevoflurane, class: anesthetic, ingredients: [sevoflurane], brands: [SevoFlo, PetRem]}
+  - {id: xylazine, class: sedative, ingredients: [xylazine], brands: [Rompun, AnaSed, XylaMed]}
+
+  # ---- heartworm and internal parasites
+  - {id: ivermectin, class: heartworm preventive, ingredients: [ivermectin], brands: [Heartgard, Iverhart]}
+  - {id: ivermectin-pyrantel, class: heartworm preventive, ingredients: [ivermectin, pyrantel], brands: [Heartgard Plus, Tri-Heart Plus, Iverhart Plus]}
+  - {id: ivermectin-pyrantel-praziquantel, class: heartworm preventive, ingredients: [ivermectin, pyrantel, praziquantel], brands: [Iverhart Max]}
+  - {id: milbemycin, class: heartworm preventive, ingredients: [milbemycin], brands: [Interceptor, MilbeGuard]}
+  - {id: milbemycin-praziquantel, class: heartworm preventive, ingredients: [milbemycin, praziquantel], brands: [Interceptor Plus]}
+  - {id: milbemycin-lufenuron, class: heartworm preventive, ingredients: [milbemycin, lufenuron], brands: [Sentinel]}
+  - {id: milbemycin-lufenuron-praziquantel, class: heartworm preventive, ingredients: [milbemycin, lufenuron, praziquantel], brands: [Sentinel Spectrum]}
+  - {id: spinosad-milbemycin, class: heartworm + flea, ingredients: [spinosad, milbemycin], brands: [Trifexis]}
+  - {id: moxidectin, class: heartworm preventive, ingredients: [moxidectin], brands: [ProHeart]}
+  - {id: imidacloprid-moxidectin, class: heartworm + flea, ingredients: [imidacloprid, moxidectin], brands: [Advantage Multi, Coraxis]}
+  - {id: selamectin, class: heartworm + flea, ingredients: [selamectin], brands: [Revolution, Selarid, Senergy, Revolt]}
+  - {id: selamectin-sarolaner, class: heartworm + flea + tick, ingredients: [selamectin, sarolaner], brands: [Revolution Plus]}
+  - {id: sarolaner-moxidectin-pyrantel, class: heartworm + flea + tick, ingredients: [sarolaner, moxidectin, pyrantel], brands: [Simparica Trio]}
+  - {id: fluralaner-moxidectin, class: heartworm + flea + tick, ingredients: [fluralaner, moxidectin], brands: [Bravecto Plus]}
+  - {id: afoxolaner-moxidectin-pyrantel, class: heartworm + flea + tick, ingredients: [afoxolaner, moxidectin, pyrantel], brands: [NexGard Plus]}
+  - {id: esafoxolaner-eprinomectin-praziquantel, class: heartworm + flea + tick, ingredients: [esafoxolaner, eprinomectin, praziquantel], brands: [NexGard Combo]}
+  - {id: lotilaner-moxidectin-praziquantel-pyrantel, class: heartworm + flea + tick, ingredients: [lotilaner, moxidectin, praziquantel, pyrantel], brands: [Credelio Quattro]}
+  - {id: eprinomectin-praziquantel, class: heartworm preventive, ingredients: [eprinomectin, praziquantel], brands: [Centragard]}
+  - {id: melarsomine, class: heartworm treatment, ingredients: [melarsomine], brands: [Immiticide, Diroban]}
+  - {id: pyrantel, class: dewormer, ingredients: [pyrantel], brands: [Nemex, Strongid]}
+  - {id: praziquantel, class: dewormer, ingredients: [praziquantel], brands: [Droncit]}
+  - {id: praziquantel-pyrantel-febantel, class: dewormer, ingredients: [praziquantel, pyrantel, febantel], brands: [Drontal Plus]}
+  - {id: praziquantel-pyrantel, class: dewormer, ingredients: [praziquantel, pyrantel], brands: [Drontal]}
+  - {id: emodepside-praziquantel, class: dewormer, ingredients: [emodepside, praziquantel], brands: [Profender]}
+  - {id: fenbendazole, class: dewormer, ingredients: [fenbendazole], brands: [Panacur, Safe-Guard]}
+  - {id: epsiprantel, class: dewormer, ingredients: [epsiprantel], brands: [Cestex]}
+  - {id: sulfadimethoxine, class: antiprotozoal, ingredients: [sulfadimethoxine], brands: [Albon]}
+
+  # ---- fleas and ticks (FDA-approved; EPA-registered topicals are not on DailyMed)
+  - {id: afoxolaner, class: flea + tick, ingredients: [afoxolaner], brands: [NexGard]}
+  - {id: fluralaner, class: flea + tick, ingredients: [fluralaner], brands: [Bravecto]}
+  - {id: sarolaner, class: flea + tick, ingredients: [sarolaner], brands: [Simparica]}
+  - {id: lotilaner, class: flea + tick, ingredients: [lotilaner], brands: [Credelio]}
+  - {id: spinosad, class: flea, ingredients: [spinosad], brands: [Comfortis]}
+  - {id: nitenpyram, class: flea, ingredients: [nitenpyram], brands: [Capstar]}
+  - {id: lufenuron, class: flea, ingredients: [lufenuron], brands: []}
+
+  # ---- antibiotics and antifungals
+  - {id: amoxicillin-clavulanate, class: antibiotic, ingredients: [amoxicillin, clavulanate], brands: [Clavamox]}
+  - {id: amoxicillin, class: antibiotic, ingredients: [amoxicillin], brands: [Amoxi-Tabs, Amoxi-Drop]}
+  - {id: cephalexin, class: antibiotic, ingredients: [cephalexin], brands: [Rilexine, Vetolexin]}
+  - {id: cefpodoxime, class: antibiotic, ingredients: [cefpodoxime], brands: [Simplicef]}
+  - {id: cefovecin, class: antibiotic, ingredients: [cefovecin], brands: [Convenia]}
+  - {id: enrofloxacin, class: antibiotic, ingredients: [enrofloxacin], brands: [Baytril, Enroflox]}
+  - {id: marbofloxacin, class: antibiotic, ingredients: [marbofloxacin], brands: [Zeniquin]}
+  - {id: orbifloxacin, class: antibiotic, ingredients: [orbifloxacin], brands: [Orbax]}
+  - {id: pradofloxacin, class: antibiotic, ingredients: [pradofloxacin], brands: [Veraflox]}
+  - {id: clindamycin, class: antibiotic, ingredients: [clindamycin], brands: [Antirobe, ClinDrops, Clintabs]}
+  - {id: doxycycline, class: antibiotic, ingredients: [doxycycline], brands: [Doxirobe]}
+  - {id: ormetoprim-sulfadimethoxine, class: antibiotic, ingredients: [ormetoprim, sulfadimethoxine], brands: [Primor]}
+  - {id: itraconazole, class: antifungal, ingredients: [itraconazole], brands: [Itrafungol]}
+  - {id: terbinafine-florfenicol, class: ear medication, ingredients: [florfenicol, terbinafine], brands: [Osurnia, Claro]}
+  - {id: gentamicin-clotrimazole-mometasone, class: ear medication, ingredients: [gentamicin, clotrimazole, mometasone], brands: [Mometamax]}
+  - {id: gentamicin-betamethasone-clotrimazole, class: ear medication, ingredients: [gentamicin, betamethasone, clotrimazole], brands: [Otomax]}
+  - {id: orbifloxacin-mometasone-posaconazole, class: ear medication, ingredients: [orbifloxacin, mometasone, posaconazole], brands: [Posatex]}
+  - {id: miconazole-polymyxin-prednisolone, class: ear medication, ingredients: [miconazole, polymyxin, prednisolone], brands: [Surolan]}
+  - {id: thiabendazole-dexamethasone-neomycin, class: ear/skin medication, ingredients: [thiabendazole, dexamethasone, neomycin], brands: [Tresaderm]}
+  - {id: enrofloxacin-silver-sulfadiazine, class: ear medication, ingredients: [enrofloxacin, silver sulfadiazine], brands: [Baytril Otic]}
+  - {id: ivermectin-otic, class: ear mites, ingredients: [ivermectin], brands: [Acarexx], brand_only: true}
+  - {id: milbemycin-otic, class: ear mites, ingredients: [milbemycin], brands: [MilbeMite], brand_only: true}
+
+  # ---- skin and allergy
+  - {id: oclacitinib, class: anti-itch, ingredients: [oclacitinib], brands: [Apoquel]}
+  - {id: ilunocitinib, class: anti-itch, ingredients: [ilunocitinib], brands: [Zenrelia]}
+  - {id: cyclosporine, class: immunomodulator, ingredients: [cyclosporine], brands: [Atopica, Cyclavance, Optimmune]}
+  - {id: prednisolone, class: corticosteroid, ingredients: [prednisolone], brands: [PrednisTab]}
+  - {id: dexamethasone, class: corticosteroid, ingredients: [dexamethasone], brands: [Azium, Dexameth-A-Vet]}
+  - {id: triamcinolone, class: corticosteroid, ingredients: [triamcinolone], brands: [Vetalog]}
+  - {id: methylprednisolone, class: corticosteroid, ingredients: [methylprednisolone], brands: [Depo-Medrol, Medrol]}
+
+  # ---- hormones and metabolism
+  - {id: insulin, class: diabetes, ingredients: [insulin], brands: [Vetsulin, ProZinc]}
+  - {id: bexagliflozin, class: diabetes, ingredients: [bexagliflozin], brands: [Bexacat]}
+  - {id: velagliflozin, class: diabetes, ingredients: [velagliflozin], brands: [Senvelgo]}
+  - {id: levothyroxine, class: thyroid, ingredients: [levothyroxine], brands: [Thyro-Tabs, Soloxine, Leventa, ThyroKare]}
+  - {id: methimazole, class: thyroid, ingredients: [methimazole], brands: [Felimazole]}
+  - {id: trilostane, class: Cushing's, ingredients: [trilostane], brands: [Vetoryl]}
+  - {id: desoxycorticosterone, class: Addison's, ingredients: [desoxycorticosterone], brands: [Percorten, Zycortal]}
+
+  # ---- heart, kidney and blood pressure
+  - {id: pimobendan, class: heart, ingredients: [pimobendan], brands: [Vetmedin]}
+  - {id: telmisartan, class: blood pressure, ingredients: [telmisartan], brands: [Semintra]}
+  - {id: amlodipine, class: blood pressure, ingredients: [amlodipine], brands: [Amodip]}
+  - {id: furosemide, class: diuretic, ingredients: [furosemide], brands: [Salix, Disal]}
+  - {id: torsemide, class: diuretic, ingredients: [torsemide], brands: [UpCard]}
+  - {id: benazepril, class: heart, ingredients: [benazepril], brands: [Fortekor]}
+  - {id: enalapril, class: heart, ingredients: [enalapril], brands: [Enacard]}
+  - {id: spironolactone, class: diuretic, ingredients: [spironolactone], brands: [Prilactone]}
+
+  # ---- stomach, appetite and nausea
+  - {id: maropitant, class: anti-nausea, ingredients: [maropitant], brands: [Cerenia]}
+  - {id: capromorelin, class: appetite stimulant, ingredients: [capromorelin], brands: [Entyce, Elura]}
+  - {id: mirtazapine, class: appetite stimulant, ingredients: [mirtazapine], brands: [Mirataz]}
+  - {id: crofelemer, class: antidiarrheal, ingredients: [crofelemer], brands: [Canalevia]}
+  - {id: ropinirole, class: emetic, ingredients: [ropinirole], brands: [Clevor]}
+
+  # ---- urinary, behaviour and seizures
+  - {id: phenylpropanolamine, class: urinary incontinence, ingredients: [phenylpropanolamine], brands: [Proin]}
+  - {id: estriol, class: urinary incontinence, ingredients: [estriol], brands: [Incurin]}
+  - {id: fluoxetine, class: behaviour, ingredients: [fluoxetine], brands: [Reconcile]}
+  - {id: clomipramine, class: behaviour, ingredients: [clomipramine], brands: [Clomicalm]}
+  - {id: selegiline, class: behaviour / cognition, ingredients: [selegiline], brands: [Anipryl]}
+  - {id: imepitoin, class: anti-seizure / noise aversion, ingredients: [imepitoin], brands: [Pexion]}
+  - {id: potassium-bromide, class: anti-seizure, ingredients: [potassium bromide], brands: [KBroVet]}
+  - {id: phenobarbital, class: anti-seizure, ingredients: [phenobarbital], brands: []}
+
+  # ---- cancer
+  - {id: toceranib, class: cancer, ingredients: [toceranib], brands: [Palladia]}
+  - {id: verdinexor, class: cancer, ingredients: [verdinexor], brands: [Laverdia]}
+  - {id: rabacfosadine, class: cancer, ingredients: [rabacfosadine], brands: [Tanovea]}
+  - {id: paclitaxel, class: cancer, ingredients: [paclitaxel], brands: [Paccal]}
+  - {id: tigilanol-tiglate, class: cancer, ingredients: [tigilanol tiglate], brands: [Stelfonta]}

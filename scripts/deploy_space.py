@@ -1,7 +1,6 @@
 """Publish the demo to a free Hugging Face Space (Docker SDK, CPU basic).
 
-    pip install huggingface_hub
-    huggingface-cli login                     # a free account and a write token
+    hf auth login                             # free account + a token with write access
     python scripts/deploy_space.py <your-hf-username>/furwise
 
 Then add GROQ_API_KEY as a secret in the Space settings. The script uploads the code

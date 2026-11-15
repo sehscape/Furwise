@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments and secrets
+.venv/
+venv/
+.env
+
+# Data: downloads, processed corpus and indexes are rebuilt by `furwise build`.
+# Only the manifests (which label versions / plant pages were used) are versioned.
+data/raw/
+data/processed/
+data/index/
+
+# Eval run artifacts. The summary that feeds the README lives in eval/results/.
+runs/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

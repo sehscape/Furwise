@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "furwise"
+version = "1.0.0"
+description = "Species-aware RAG assistant for dog and cat medication and plant-toxicity questions, grounded in DailyMed labels and the ASPCA plant list."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+authors = [{ name = "Sehal Chodankar" }]
+dependencies = [
+    "requests>=2.31",
+    "lxml>=5.0",
+    "beautifulsoup4>=4.12",
+    "pyyaml>=6.0",
+    "pandas>=2.0",
+    "torch>=2.4",
+    "sentence-transformers>=3.0",
+    "chromadb>=1.0",
+    "llama-index-core>=0.12",
+    "llama-index-vector-stores-chroma>=0.4",
+    "llama-index-embeddings-huggingface>=0.5",
+    "llama-index-retrievers-bm25>=0.5",
+    "ragas>=0.4.4,<0.5",
+    "rapidfuzz>=3.0",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "streamlit>=1.35",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5", "httpx>=0.27"]
+
+[project.scripts]
+furwise = "furwise.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B008"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
+"src/furwise/generate.py" = ["E501"]

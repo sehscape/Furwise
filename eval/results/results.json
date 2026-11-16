@@ -159,5 +159,19 @@
     },
     "date": "2026-11-15 21:13",
     "run_dir": "runs/stage3/20261115-193253"
+  },
+  "stage3_lite": {
+    "hit@5": 0.7831,
+    "recall@5": 0.7831,
+    "mrr": 0.6237,
+    "retrieval_mixup": 0.026,
+    "context_precision": 0.661,
+    "context_recall": 0.7831,
+    "retrieval_latency_p50_ms": 39.6,
+    "retrieval_latency_p95_ms": 62.2,
+    "stage": "stage3_lite",
+    "label": "3-lite \u00b7 Stage 3 without the reranker (hosted demo)",
+    "retrieval_run": "runs/stage3_lite/20261116-224417",
+    "n": 104
   }
 }

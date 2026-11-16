@@ -213,6 +213,8 @@ def render_tables(results: dict) -> str:
         "|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|",
     ]
     for stage, cfg in STAGES.items():
+        if not cfg.get("table", True):
+            continue
         r = results.get(stage, {})
         main.append(
             f"| {cfg['label']} | {_num(r.get('context_precision'))} | "

@@ -20,9 +20,7 @@ from furwise.corpus.names import detect_species
 from furwise.corpus.store import get_corpus
 from furwise.llm import LLMError
 from furwise.pipeline import STAGES, Pipeline
-
-# Shown with every emergency answer. The number is printed on the ASPCA plant pages.
-POISON_CONTROL = "ASPCA Animal Poison Control Center: (888) 426-4435"
+from furwise.safety import POISON_CONTROL
 
 
 @lru_cache(maxsize=4)

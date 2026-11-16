@@ -15,6 +15,7 @@ import hashlib
 import json
 import logging
 import time
+from functools import lru_cache
 
 from furwise.corpus.store import Corpus
 from furwise.settings import EMBED_MODEL, INDEX
@@ -54,7 +55,9 @@ def to_node(chunk: dict):
     )
 
 
+@lru_cache(maxsize=1)
 def embed_model():
+    """One shared embedding model per process (the app may run two pipelines)."""
     from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
     return HuggingFaceEmbedding(

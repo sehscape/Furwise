@@ -2,25 +2,45 @@
 
     streamlit run app/streamlit_app.py
 
-Runs the pipeline in-process (no separate API needed), so it can be hosted for free
-as a single Hugging Face Space. Optional side-by-side mode shows what a plain RAG
-bot (Stage 0) would have answered to the same question.
+Runs the pipeline in-process (no separate API needed), so it can be hosted for free on
+Streamlit Community Cloud. Optional side-by-side mode shows what a plain RAG bot
+(Stage 0) would have answered to the same question.
+
+Hosted settings (Streamlit secrets or environment variables):
+    GROQ_API_KEY        free Groq key for generation
+    FURWISE_DATA_REPO   private Hugging Face dataset with the prebuilt corpus + index
+    HF_TOKEN            read token for that dataset
+    FURWISE_DEMO_STAGE  stage3 (default, full) or stage3_lite (no reranker, fits ~1 GB RAM)
 """
 
 from __future__ import annotations
 
 import html
 import json
+import os
 import re
+import sys
 from pathlib import Path
 
 import streamlit as st
 
-from furwise import DISCLAIMER
-from furwise.api import POISON_CONTROL
-from furwise.llm import LLMError
-from furwise.pipeline import STAGES, Pipeline, Response
-from furwise.settings import EVAL_DIR
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))  # works without `pip install -e .` (hosted)
+try:  # Streamlit Cloud secrets -> environment, before furwise reads its settings
+    for _key, _value in st.secrets.items():
+        if isinstance(_value, str):
+            os.environ.setdefault(_key, _value)
+except Exception:  # no secrets file locally: .env is used instead
+    pass
+
+from furwise import DISCLAIMER  # noqa: E402
+from furwise.llm import LLMError  # noqa: E402
+from furwise.pipeline import STAGES, Pipeline, Response  # noqa: E402
+from furwise.remote import ensure_data  # noqa: E402
+from furwise.safety import POISON_CONTROL  # noqa: E402
+from furwise.settings import EVAL_DIR  # noqa: E402
+
+DEMO_STAGE = os.getenv("FURWISE_DEMO_STAGE", "stage3")
 
 st.set_page_config(page_title="Furwise · pet medication & toxicity", page_icon="🐾", layout="wide")
 
@@ -64,6 +84,12 @@ CSS = """
 
 @st.cache_resource(show_spinner="Loading the corpus and models (first run only)...")
 def pipeline(stage: str) -> Pipeline:
+    if not ensure_data():
+        st.error(
+            "No corpus found. Run `furwise fetch`, `furwise build` and `furwise index`, "
+            "or set FURWISE_DATA_REPO for a hosted copy."
+        )
+        st.stop()
     return Pipeline(stage)
 
 
@@ -207,8 +233,8 @@ def main() -> None:
             if compare:
                 left, right = st.columns(2)
                 with left:
-                    resp = pipeline("stage3").answer(question)
-                    answer_card(resp, "🐾 Furwise (Stage 3)")
+                    resp = pipeline(DEMO_STAGE).answer(question)
+                    answer_card(resp, f"🐾 Furwise ({STAGES[DEMO_STAGE]['label'].split(' · ')[0]})")
                     trace(resp)
                     sources(resp)
                 with right:
@@ -216,7 +242,7 @@ def main() -> None:
                     answer_card(base, f"🤖 Basic RAG ({STAGES['stage0']['label']})")
                     sources(base)
             else:
-                resp = pipeline("stage3").answer(question)
+                resp = pipeline(DEMO_STAGE).answer(question)
                 answer_card(resp, "Answer")
                 trace(resp)
                 st.markdown("#### Sources")

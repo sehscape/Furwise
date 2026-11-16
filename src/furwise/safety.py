@@ -19,6 +19,8 @@ from dataclasses import dataclass, field
 EMERGENCY_PREFIX = "Contact your vet or a pet poison helpline"
 EMERGENCY_LINE = f"{EMERGENCY_PREFIX} right away."
 DECLINE_PREFIX = "I can't answer that from my sources"
+# Shown with emergency answers. The number is printed on the ASPCA plant pages.
+POISON_CONTROL = "ASPCA Animal Poison Control Center: (888) 426-4435"
 
 # ------------------------------------------------------------------ emergencies
 # An exposure that already happened: "ate", "got into", "licked", "two chews today".

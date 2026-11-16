@@ -50,6 +50,15 @@ STAGES = {
         "safety": True,
         "label": "3 · + Species filters & safety",
     },
+    # The hosted demo: Stage 3 without the cross-encoder, so it fits a free host's ~1 GB
+    # of RAM and answers in about a second on a shared CPU. Evaluated separately.
+    "stage3_lite": {
+        "hybrid": True,
+        "rerank": False,
+        "safety": True,
+        "label": "3-lite · Stage 3 without the reranker (hosted demo)",
+        "table": False,
+    },
 }
 
 

@@ -363,9 +363,10 @@ questions answered with no refusal and no species mix-up **57/77 → 74/77**, em
 > label section. Many "wrong" citations are correct facts from a sibling section (e.g. Galliprant vomiting cited from
 > Adverse Reactions instead of Precautions); RAGAS faithfulness (0.95) is the better measure of support.
 >
-> **Answer metrics for Stages 0–2** are generated on Groq's free tier, which allows ~200K tokens per model per day.
-> Stage 3 used ~100K; Stage 0 is 24/104 questions in and resumes from cache on the next quota window
-> (`furwise eval run --stage stage0 --judge`), then Stages 1 and 2. The ⏳ cells fill in automatically.
+> **Answer metrics for Stages 1–2** are still being generated on Groq's free tier, which allows ~200K tokens per
+> model per day (one full stage is ~100–135K). Stages 0 and 3 are complete; Stage 1 is 74/104 questions in and
+> resumes from cache on the next quota window (`furwise eval run --stage stage1 --judge`), then Stage 2. The ⏳
+> cells fill in automatically with `furwise eval table`.
 <!-- stages:end -->
 
 ---

@@ -60,10 +60,10 @@ worse than no answer. Furwise is built around the specific ways those systems fa
 <!-- glance:start -->
 <div align="center">
 
-| 🎯 Hit@5 | 🐶🐱 Retrieval species mix-up | 🧾 Faithfulness | 🚨 Emergencies caught | 🚫 Correct declines | 💸 Cost |
+| 🎯 Hit@5 | 🐶🐱 Species traps answered safely | 🧾 Faithfulness | 🚨 Emergencies caught | 🚫 Correct declines | 💸 Cost |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **69% → 87%** | **23% → 1%** | **0.95** | **13 / 13**, 0 false alarms | **14 / 14** | **$0** |
-| dense baseline → final | dense baseline → final | RAGAS, final pipeline | final pipeline | final pipeline | free models + free tiers |
+| **69% → 87%** | **6 / 17 → 16 / 17** | **0.95** | **11 / 13 → 13 / 13** | **13 / 14 → 14 / 14** | **$0** |
+| baseline → final | baseline → final | RAGAS, final pipeline | baseline → final, 0 false alarms | baseline → final | free models + free tiers |
 
 </div>
 
@@ -292,7 +292,7 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 <!-- results:start -->
 | Stage | Context precision | Context recall | Faithfulness | Citation accuracy | Species mix-up ↓ | Emergency detection | Correct decline | Latency p50 / p95 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 0 · Baseline (dense top-k) | 0.53 | 0.69 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| 0 · Baseline (dense top-k) | 0.53 | 0.69 | 0.99 | 54% | 0% | 85% | 93% | 0.5 s / 1.1 s |
 | 1 · + Hybrid (BM25 + dense, RRF) | 0.48 | 0.61 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | 2 · + BGE reranker | 0.58 | 0.72 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | 3 · + Species filters & safety | 0.74 | 0.87 | 0.95 | 63% | 0% | 100% | 100% | 3.4 s / 13.6 s |
@@ -301,7 +301,7 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 
 | Stage | Hit@5 | MRR | Retrieval mix-up ↓ | Missed species traps ↓ | False emergency ↓ | Over-decline ↓ | Retrieval p50 / p95 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 0 · Baseline (dense top-k) | 69% | 0.51 | 23% | ⏳ | ⏳ | ⏳ | 0.1 s / 0.1 s |
+| 0 · Baseline (dense top-k) | 69% | 0.51 | 23% | 0% | 3% | 26% | 0.1 s / 0.1 s |
 | 1 · + Hybrid (BM25 + dense, RRF) | 61% | 0.45 | 27% | ⏳ | ⏳ | ⏳ | 0.1 s / 0.1 s |
 | 2 · + BGE reranker | 72% | 0.59 | 23% | ⏳ | ⏳ | ⏳ | 4.2 s / 11.3 s |
 | 3 · + Species filters & safety | 87% | 0.70 | 1% | 0% | 0% | 4% | 3.0 s / 13.3 s |
@@ -321,6 +321,12 @@ A strong-ish baseline on purpose: the same section-aware chunks with contextual 
 so later gains are not just "better chunking". It finds the right passage for **69%** of questions, but **23%**
 of species questions get evidence about the wrong animal in the top 5: "can I give my cat Rimadyl?" retrieves
 Rimadyl's dog dosing, because nothing tells the retriever that the cat is the point of the question.
+
+The answers show what that costs. Its species mix-up looks perfect (0%), but only because the model **refuses**
+when the evidence is wrong: it declined **26%** of answerable questions, including **10 of 17 species traps**
+("Can my cat take Galliprant?" → *"I can't answer that from my sources."*), because the "dogs only" banner was
+never retrieved. Its safety behaviour is prompt-only and it shows: it missed 2 of 13 emergencies (an empty reply
+to a cat that licked permethrin), raised 3 false alarms, and answered a diagnosis question it should have declined.
 
 #### Stage 1 · + BM25 hybrid with Reciprocal Rank Fusion: **worse** (69% → 61%)
 Kept in the table because it is the most instructive result. BM25 finds the right **drug** every time (exact
@@ -347,6 +353,10 @@ The biggest jump, and the one that matters for safety:
 * **Verifier**: every answer is cited; sentences with unsupported citations are removed. Answer-level species
   mix-up is **0%**, faithfulness **0.95**. The price is a 4% over-decline rate (3 of 77 answerable questions); two of them
   are explained under failures below.
+
+Against the baseline, on the same 104 questions: species traps answered safely **6/17 → 16/17**, answerable
+questions answered with no refusal and no species mix-up **57/77 → 74/77**, emergencies **11/13 → 13/13**, false alarms
+**3 → 0**, declines **13/14 → 14/14**.
 
 > [!NOTE]
 > **Citation accuracy (63%) is scored strictly**: a citation counts only if it is the gold chunk or from the same

@@ -164,8 +164,18 @@ the context. Retrieval similarity decides what is *relevant*; the pin decides wh
 
 ## 6. Hosting
 
-The Streamlit app runs the whole pipeline in-process, so the demo is a single free
-Hugging Face Space (Docker SDK, CPU basic tier: 2 vCPU, 16 GB RAM).
-[`scripts/deploy_space.py`](../scripts/deploy_space.py) uploads the code with the locally
-built corpus and index; the Groq key is a Space secret. The FastAPI service exposes the
-same pipeline for programmatic use.
+The Streamlit app runs the whole pipeline in-process. The plan was a free Hugging Face
+Space, but Docker and Gradio Spaces on the free CPU tier now require a paid plan, so the
+demo runs on Streamlit Community Cloud's free tier instead, which allows about 1 GB of RAM.
+
+That limit forced a measured trade-off. The full Stage 3 pipeline peaks at ~2.6 GB, and the
+bge-reranker accounts for ~1.1 GB of that. The hosted demo therefore runs `stage3_lite`,
+which is Stage 3 without the reranker: ~0.85 GB including compare mode (one embedding model
+is shared by both pipelines), 40 ms retrieval, hit@5 78% against 87% for the full pipeline
+and 69% for the baseline. The safety gates run before retrieval, so they behave the same.
+
+Building the corpus means ~75 minutes of polite crawling and ~13 minutes of embedding, so the
+host never builds it. `furwise.remote` pushes the locally built corpus and index to a
+**private** Hugging Face dataset (free), and the app downloads it at start-up with a read
+token. The [`Dockerfile`](../Dockerfile) runs the full pipeline on any machine with ~3 GB of
+RAM, and the FastAPI service exposes the same pipeline for programmatic use.

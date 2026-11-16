@@ -529,9 +529,36 @@ furwise eval run --stage stage3 --judge      # evaluate a stage (cached, resumab
 pytest                                       # 45 unit tests, no network or models needed
 ```
 
-**Free hosting**: the app runs the whole pipeline in-process, so it fits one free
-Hugging Face Space (Docker, CPU basic). `python scripts/deploy_space.py <user>/furwise`
-uploads the code with the locally built index; add `GROQ_API_KEY` as a Space secret.
+### ☁️ Free hosting: Streamlit Community Cloud, lite mode
+
+Free app hosts give about **1 GB of RAM**. The full Stage 3 pipeline needs ~2.6 GB (the cross-encoder alone is
+~1.1 GB) and takes 3–14 s per question on a shared CPU, so the hosted demo runs **`stage3_lite`**: Stage 3 with every
+safety layer but **without the reranker**. Measured on the same 104 questions:
+
+| | Full Stage 3 (local) | Hosted lite | Baseline |
+|---|:---:|:---:|:---:|
+| Hit@5 | 87% | **78%** | 69% |
+| Retrieval species mix-up | 1% | **3%** | 23% |
+| Retrieval latency p50 | 3.0 s | **0.04 s** | 0.1 s |
+| Memory (app + compare mode) | ~2.6 GB | **~0.85 GB** | – |
+
+Emergency detection and declines are identical in both, because those gates run before retrieval.
+
+```bash
+python -m furwise.remote push <hf-user>/furwise-index   # prebuilt corpus + index -> private HF dataset (free)
+```
+Then on [share.streamlit.io](https://share.streamlit.io): **New app** → this repo → main file `app/streamlit_app.py`,
+Python 3.11, and these secrets:
+
+```toml
+GROQ_API_KEY = "..."
+HF_TOKEN = "..."                       # read access to the private dataset
+FURWISE_DATA_REPO = "<hf-user>/furwise-index"
+FURWISE_DEMO_STAGE = "stage3_lite"
+```
+
+The dataset is private, so processed ASPCA content is not republished; every answer links to the original page.
+The [`Dockerfile`](Dockerfile) runs the full pipeline anywhere with ~3 GB of RAM.
 
 <details>
 <summary><b>🧭 Project structure</b></summary>
@@ -545,7 +572,7 @@ Furwise/
 ├── eval/
 │   ├── questions.yaml           # 104 questions with gold quotes
 │   └── results/                 # results.json + generated table
-├── scripts/deploy_space.py      # free Hugging Face Space deploy
+├── scripts/finish_eval.bat      # resume the remaining evaluation runs
 ├── src/furwise/
 │   ├── ingest/                  # polite HTTP client, DailyMed, SPL parser, ASPCA
 │   ├── corpus/                  # sections, species, chunker, names, build
@@ -556,9 +583,10 @@ Furwise/
 │   ├── llm.py                   # free LLM client (Groq / Gemini / Ollama), cache, pacing
 │   ├── pipeline.py              # stage 0-3
 │   ├── api.py                   # FastAPI
+│   ├── remote.py                # ship the prebuilt index to a hosted demo
 │   └── cli.py                   # furwise fetch | build | index | ask | eval
 ├── tests/                       # synthetic fixtures only
-└── Dockerfile                   # Hugging Face Space image
+└── Dockerfile                   # full pipeline in a container
 ```
 </details>
 

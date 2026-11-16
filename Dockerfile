@@ -1,4 +1,4 @@
-# Furwise demo image, sized for a free Hugging Face Space (CPU basic, 16 GB RAM).
+# Furwise full-pipeline image (needs ~3 GB RAM: embedding model + BGE reranker).
 #   docker build -t furwise .
 #   docker run -p 7860:7860 -e GROQ_API_KEY=... furwise
 # The corpus and vector index (data/processed, data/index) are built locally with

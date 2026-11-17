@@ -65,18 +65,69 @@
     "run_dir": "runs/stage0/20261116-214827"
   },
   "stage1": {
+    "n": 104,
     "hit@5": 0.6145,
     "recall@5": 0.6145,
     "mrr": 0.447,
     "retrieval_mixup": 0.2727,
     "context_precision": 0.4816,
     "context_recall": 0.6145,
-    "retrieval_latency_p50_ms": 69.9,
-    "retrieval_latency_p95_ms": 84.9,
+    "faithfulness": 1.0,
+    "citation_accuracy": 0.5165,
+    "species_mixup": 0.0,
+    "missed_trap": 0.0,
+    "emergency_detection": 0.8462,
+    "false_emergency": 0.033,
+    "correct_decline": 0.9286,
+    "over_decline": 0.2727,
+    "uncited_answers": 0.0,
+    "latency_p50_ms": 556.3,
+    "latency_p95_ms": 1119.6,
+    "retrieval_latency_p50_ms": 69.3,
+    "retrieval_latency_p95_ms": 94.3,
+    "by_category": {
+      "decline": {
+        "correct_decline": 0.9286
+      },
+      "emergency": {
+        "hit@5": 0.6667,
+        "emergency_detected": 0.8462,
+        "faithfulness": 1.0
+      },
+      "label_fact": {
+        "hit@5": 0.7059,
+        "species_mixup": 0.0,
+        "over_decline": 0.1765,
+        "faithfulness": 1.0
+      },
+      "name_variant": {
+        "hit@5": 0.3571,
+        "species_mixup": 0.0,
+        "over_decline": 0.2143,
+        "faithfulness": 1.0
+      },
+      "plant_fact": {
+        "hit@5": 1.0,
+        "species_mixup": 0.0,
+        "over_decline": 0.0,
+        "faithfulness": 1.0
+      },
+      "species_trap": {
+        "hit@5": 0.3529,
+        "species_mixup": 0.0,
+        "over_decline": 0.7059,
+        "faithfulness": 1.0
+      }
+    },
     "stage": "stage1",
     "label": "1 \u00b7 + Hybrid (BM25 + dense, RRF)",
-    "retrieval_run": "runs/stage1/20261115-191511",
-    "n": 104
+    "mode": "full",
+    "generator": "groq:qwen/qwen3.8-27b",
+    "judge": "groq:openai/gpt-oss-120b",
+    "faithfulness_sample": 24,
+    "rerank": null,
+    "date": "2026-11-17 09:41",
+    "run_dir": "runs/stage1/20261117-093348"
   },
   "stage2": {
     "hit@5": 0.7229,

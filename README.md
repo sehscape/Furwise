@@ -301,7 +301,7 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 | Stage | Context precision | Context recall | Faithfulness | Citation accuracy | Species mix-up ↓ | Emergency detection | Correct decline | Latency p50 / p95 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 0 · Baseline (dense top-k) | 0.53 | 0.69 | 0.99 | 54% | 0% | 85% | 93% | 0.5 s / 1.1 s |
-| 1 · + Hybrid (BM25 + dense, RRF) | 0.48 | 0.61 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| 1 · + Hybrid (BM25 + dense, RRF) | 0.48 | 0.61 | 1.00 | 52% | 0% | 85% | 93% | 0.6 s / 1.1 s |
 | 2 · + BGE reranker | 0.58 | 0.72 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
 | 3 · + Species filters & safety | 0.74 | 0.87 | 0.95 | 63% | 0% | 100% | 100% | 3.4 s / 13.6 s |
 
@@ -310,7 +310,7 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 | Stage | Hit@5 | MRR | Retrieval mix-up ↓ | Missed species traps ↓ | False emergency ↓ | Over-decline ↓ | Retrieval p50 / p95 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 0 · Baseline (dense top-k) | 69% | 0.51 | 23% | 0% | 3% | 26% | 0.1 s / 0.1 s |
-| 1 · + Hybrid (BM25 + dense, RRF) | 61% | 0.45 | 27% | ⏳ | ⏳ | ⏳ | 0.1 s / 0.1 s |
+| 1 · + Hybrid (BM25 + dense, RRF) | 61% | 0.45 | 27% | 0% | 3% | 27% | 0.1 s / 0.1 s |
 | 2 · + BGE reranker | 72% | 0.59 | 23% | ⏳ | ⏳ | ⏳ | 4.2 s / 11.3 s |
 | 3 · + Species filters & safety | 87% | 0.70 | 1% | 0% | 0% | 4% | 3.0 s / 13.3 s |
 <!-- results:end -->
@@ -341,6 +341,9 @@ Kept in the table because it is the most instructive result. BM25 finds the righ
 names are its strength) but the wrong **section**: owners say *"used for"*, labels say *"indicated for"*, and very
 short chunks such as a one-line Contraindications paragraph get a large BM25 length bonus. Of the 10 questions
 that changed, hybrid lost 8 and won 2. Lesson: lexical search fixes *which product*, not *which part of the label*.
+At the answer level nothing improved either: 5 of 17 species traps answered safely (baseline 6), 27% over-declines,
+the same 2 missed emergencies and 3 false alarms. Better *lexical* recall does not give the model the evidence it
+needs when the question is really about the other animal.
 
 #### Stage 2 · + BGE cross-encoder reranker (61% → 72%, MRR 0.45 → 0.59)
 The reranker reads question and passage together, so it recovers exactly what BM25 broke: it moves the
@@ -371,10 +374,9 @@ questions answered with no refusal and no species mix-up **57/77 → 74/77**, em
 > label section. Many "wrong" citations are correct facts from a sibling section (e.g. Galliprant vomiting cited from
 > Adverse Reactions instead of Precautions); RAGAS faithfulness (0.95) is the better measure of support.
 >
-> **Answer metrics for Stages 1–2** are still being generated on Groq's free tier, which allows ~200K tokens per
-> model per day (one full stage is ~100–135K). Stages 0 and 3 are complete; Stage 1 is 74/104 questions in and
-> resumes from cache on the next quota window (`furwise eval run --stage stage1 --judge`), then Stage 2. The ⏳
-> cells fill in automatically with `furwise eval table`.
+> **Answer metrics for Stage 2** are still being generated on Groq's free tier (~200K tokens per model per day,
+> shared with the live demo). Stages 0, 1 and 3 are complete; Stage 2 is 37/104 questions in and resumes from cache
+> on the next quota window (`furwise eval run --stage stage2 --judge`). The ⏳ cells fill in with `furwise eval table`.
 <!-- stages:end -->
 
 ---

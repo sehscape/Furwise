@@ -109,3 +109,11 @@ def test_species_note_flags_wrong_species_label():
     chunk = {"source": "DailyMed", "species_target": ["dog"], "caution_species": ["cat"]}
     note = species_note([chunk], ["cat"])
     assert "about a cat" in note and "for dogs only" in note and "warns about cats" in note
+
+
+def test_daily_cap_retry_hint_is_parsed():
+    from furwise.llm import _retry_after_seconds
+
+    assert _retry_after_seconds("Please try again in 1m23.5s.") == 83.5
+    assert _retry_after_seconds("Please try again in 2h3m") == 7380
+    assert _retry_after_seconds("no hint here") is None

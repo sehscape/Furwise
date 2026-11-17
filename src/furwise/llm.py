@@ -63,6 +63,7 @@ PROVIDERS = {
     },
 }
 CACHE_DIR = RUNS / "llm_cache"
+MAX_DAILY_WAIT_S = 600  # wait out a rolling daily cap if it frees up within 10 minutes
 _THINK = re.compile(r"<think>.*?</think>", re.S)
 
 
@@ -233,10 +234,18 @@ class LLMClient:
             if resp.status_code in (429, 500, 502, 503, 504) and attempt < 5:
                 delay = min(float(resp.headers.get("retry-after") or 2 ** (attempt + 1)), 90)
                 if resp.status_code == 429 and "per day" in resp.text.lower():
-                    raise LLMError(
-                        f"{self.config.label}: daily free-tier limit reached. "
-                        "Cached answers are kept; run again later to resume."
-                    )
+                    # The daily cap is a rolling window: tokens free up gradually. Wait
+                    # when the provider says it is short, otherwise stop (cache resumes).
+                    wait = _retry_after_seconds(resp.text)
+                    if wait is None or wait > MAX_DAILY_WAIT_S:
+                        raise LLMError(
+                            f"{self.config.label}: daily free-tier limit reached. "
+                            "Cached answers are kept; run again later to resume."
+                        )
+                    log.warning("%s: daily cap, waiting %.0fs", self.config.label, wait)
+                    time.sleep(wait + 2)
+                    waited += wait + 2
+                    continue
                 log.warning(
                     "%s -> %d, retrying in %.0fs", self.config.label, resp.status_code, delay
                 )
@@ -256,6 +265,15 @@ class LLMClient:
         out = Completion(_THINK.sub("", text).strip(), usage[0], usage[1], elapsed, waited * 1000)
         self._store(key, out)
         return out
+
+
+def _retry_after_seconds(message: str) -> float | None:
+    """Parse "Please try again in 1m23.5s" (Groq's 429 text) into seconds."""
+    m = re.search(r"try again in\s+(?:(\d+)h)?\s*(?:(\d+)m)?\s*(?:([\d.]+)s)?", message)
+    if not m or not any(m.groups()):
+        return None
+    h, mins, secs = (float(x) if x else 0.0 for x in m.groups())
+    return h * 3600 + mins * 60 + secs
 
 
 def extract_json(text: str) -> str:

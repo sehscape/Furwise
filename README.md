@@ -6,7 +6,12 @@
 
 *Hybrid retrieval · BGE reranking · species-aware filtering · a verified citation on every claim · measured stage by stage*
 
+### [🚀 Try the live demo → furwise.streamlit.app](https://furwise.streamlit.app/)
+
+<sub>Try: [a species trap](https://furwise.streamlit.app/?q=Can%20I%20give%20my%20cat%20Rimadyl%20for%20pain%3F) · [an emergency](https://furwise.streamlit.app/?q=My%20cat%20chewed%20an%20Easter%20lily%20leaf%20and%20now%20she%20is%20vomiting.) · [Furwise vs a basic RAG bot](https://furwise.streamlit.app/?q=Can%20I%20put%20Advantage%20Multi%20for%20Dogs%20on%20my%20cat%3F&compare=1) · first load takes about a minute while the free host wakes up</sub>
+
 [![CI](https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml/badge.svg)](https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml)
+[![Live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://furwise.streamlit.app/)
 ![Python](https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-ChromaDB-6E40C9)
 ![Models](https://img.shields.io/badge/BGE-embed%20%2B%20rerank-orange)
@@ -30,6 +35,9 @@
 <td align="center"><sub><b>Emergency.</b> The required line is added in code, the facts are quoted from the ASPCA entry.</sub></td>
 </tr>
 </table>
+
+<p align="center"><img src="docs/images/demo-compare.jpg" width="80%" alt="Live demo, compare mode: Furwise answers with the label restriction while a basic RAG bot declines"/><br/>
+<sub><b>Live demo, compare mode.</b> Same question, same corpus: Furwise pins the label restriction and answers; a basic RAG bot can't find it and declines.</sub></p>
 
 ---
 
@@ -529,7 +537,7 @@ furwise eval run --stage stage3 --judge      # evaluate a stage (cached, resumab
 pytest                                       # 45 unit tests, no network or models needed
 ```
 
-### ☁️ Free hosting: Streamlit Community Cloud, lite mode
+### ☁️ Free hosting: Streamlit Community Cloud, lite mode ([live](https://furwise.streamlit.app/))
 
 Free app hosts give about **1 GB of RAM**. The full Stage 3 pipeline needs ~2.6 GB (the cross-encoder alone is
 ~1.1 GB) and takes 3–14 s per question on a shared CPU, so the hosted demo runs **`stage3_lite`**: Stage 3 with every

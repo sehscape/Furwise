@@ -302,7 +302,7 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 0 · Baseline (dense top-k) | 0.53 | 0.69 | 0.99 | 54% | 0% | 85% | 93% | 0.5 s / 1.1 s |
 | 1 · + Hybrid (BM25 + dense, RRF) | 0.48 | 0.61 | 1.00 | 52% | 0% | 85% | 93% | 0.6 s / 1.1 s |
-| 2 · + BGE reranker | 0.58 | 0.72 | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
+| 2 · + BGE reranker | 0.58 | 0.72 | 0.99 | 61% | 0% | 92% | 93% | 5.6 s / 7.2 s |
 | 3 · + Species filters & safety | 0.74 | 0.87 | 0.95 | 63% | 0% | 100% | 100% | 3.4 s / 13.6 s |
 
 **Retrieval and safety details**
@@ -311,11 +311,30 @@ Every stage runs on the **same corpus and the same questions** and adds **one la
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 0 · Baseline (dense top-k) | 69% | 0.51 | 23% | 0% | 3% | 26% | 0.1 s / 0.1 s |
 | 1 · + Hybrid (BM25 + dense, RRF) | 61% | 0.45 | 27% | 0% | 3% | 27% | 0.1 s / 0.1 s |
-| 2 · + BGE reranker | 72% | 0.59 | 23% | ⏳ | ⏳ | ⏳ | 4.2 s / 11.3 s |
+| 2 · + BGE reranker | 72% | 0.59 | 23% | 0% | 3% | 22% | 5.1 s / 6.5 s |
 | 3 · + Species filters & safety | 87% | 0.70 | 1% | 0% | 0% | 4% | 3.0 s / 13.3 s |
 <!-- results:end -->
 
-<sub>Retrieval metrics use all 104 questions. Answer metrics need a free-tier LLM; RAGAS faithfulness is judged on a fixed stratified sample of 24 questions (the same for every stage) because the free judge has a daily token cap. ⏳ = not run yet. Method and caveats: <a href="docs/evaluation.md">docs/evaluation.md</a>.</sub>
+**What the numbers mean for a pet owner** (counts out of the same 104 questions):
+
+| Stage | 🪤 Species traps answered safely | ✅ Answerable questions answered safely | 🚨 Emergencies caught | ⚠️ False alarms | 🚫 Out-of-scope declined |
+|---|:---:|:---:|:---:|:---:|:---:|
+| 0 · Baseline (dense top-k) | 6 / 17 | 57 / 77 | 11 / 13 | 3 | 13 / 14 |
+| 1 · + Hybrid (BM25 + dense, RRF) | 5 / 17 | 56 / 77 | 11 / 13 | 3 | 13 / 14 |
+| 2 · + BGE reranker | 6 / 17 | 60 / 77 | 12 / 13 | 3 | 13 / 14 |
+| 3 · + Species filters & safety | **16 / 17** | **74 / 77** | **13 / 13** | **0** | **14 / 14** |
+
+<sub>"Answered safely" = answered (not refused) without citing evidence about the wrong animal; for traps, the answer must also state the restriction.</sub>
+
+```mermaid
+xychart-beta
+    title "Species traps answered safely (out of 17)"
+    x-axis ["0 Dense", "1 + BM25", "2 + Reranker", "3 + Species filters"]
+    y-axis "questions" 0 --> 17
+    bar [6, 5, 6, 16]
+```
+
+<sub>Retrieval metrics use all 104 questions. Answer metrics need a free-tier LLM; RAGAS faithfulness is judged on a fixed stratified sample of 24 questions (the same for every stage) because the free judge has a daily token cap. Method and caveats: <a href="docs/evaluation.md">docs/evaluation.md</a>.</sub>
 
 ---
 
@@ -351,6 +370,10 @@ Indications paragraph above the Contraindications line for "what is X used for".
 CPU: retrieval goes from ~0.1 s to **4.2 s p50 / 11.3 s p95**. Input was capped at 320 tokens and the pool at 12
 candidates after measuring (int8 quantization was faster but reordered the top 5, so it was rejected).
 Species mix-up is unchanged (23%): ranking better does not tell the system which animal the question is about.
+The answers confirm it. The reranker gives the best answer quality of the first three stages (60/77 answerable
+questions answered, over-declines down from 27% to 22%, one more emergency caught), but it still declines **11 of 17
+species traps**: the "dogs only" banner is rarely the most *relevant* passage to "can I give my cat X?", so better
+ranking alone never surfaces it.
 
 #### Stage 3 · + Name resolution, species/entity filters, pinning, safety gates, verifier (72% → 87%)
 The biggest jump, and the one that matters for safety:
@@ -373,10 +396,7 @@ questions answered with no refusal and no species mix-up **57/77 → 74/77**, em
 > **Citation accuracy (63%) is scored strictly**: a citation counts only if it is the gold chunk or from the same
 > label section. Many "wrong" citations are correct facts from a sibling section (e.g. Galliprant vomiting cited from
 > Adverse Reactions instead of Precautions); RAGAS faithfulness (0.95) is the better measure of support.
->
-> **Answer metrics for Stage 2** are still being generated on Groq's free tier (~200K tokens per model per day,
-> shared with the live demo). Stages 0, 1 and 3 are complete; Stage 2 is 37/104 questions in and resumes from cache
-> on the next quota window (`furwise eval run --stage stage2 --judge`). The ⏳ cells fill in with `furwise eval table`.
+
 <!-- stages:end -->
 
 ---
@@ -536,7 +556,7 @@ furwise ask "Can I give my cat Rimadyl?"
 streamlit run app/streamlit_app.py           # demo UI, with a "compare with basic RAG" toggle
 uvicorn furwise.api:app --port 8000          # REST API: /ask, /lookup, /health
 furwise eval run --stage stage3 --judge      # evaluate a stage (cached, resumable)
-pytest                                       # 45 unit tests, no network or models needed
+pytest                                       # 46 unit tests, no network or models needed
 ```
 
 ### ☁️ Free hosting: Streamlit Community Cloud, lite mode ([live](https://furwise.streamlit.app/))

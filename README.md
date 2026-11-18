@@ -10,7 +10,7 @@
 
 <sub>Try: [a species trap](https://furwise.streamlit.app/?q=Can%20I%20give%20my%20cat%20Rimadyl%20for%20pain%3F) · [an emergency](https://furwise.streamlit.app/?q=My%20cat%20chewed%20an%20Easter%20lily%20leaf%20and%20now%20she%20is%20vomiting.) · [Furwise vs a basic RAG bot](https://furwise.streamlit.app/?q=Can%20I%20put%20Advantage%20Multi%20for%20Dogs%20on%20my%20cat%3F&compare=1) · first load takes about a minute while the free host wakes up</sub>
 
-[![CI](https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml/badge.svg)](https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety/actions/workflows/ci.yml)
+[![CI](https://github.com/sehscape/Furwise/actions/workflows/ci.yml/badge.svg)](https://github.com/sehscape/Furwise/actions/workflows/ci.yml)
 [![Live demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://furwise.streamlit.app/)
 ![Python](https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white)
 ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-ChromaDB-6E40C9)
@@ -537,7 +537,7 @@ Chosen from what the evaluation exposed, not from a wish list. Each one reuses d
 ## 🚀 Quickstart
 
 ```bash
-git clone https://github.com/sehscape/Furwise----Species-Aware-RAG-Assistant-for-Veterinary-Drug-Toxicity-Safety.git furwise
+git clone https://github.com/sehscape/Furwise.git furwise
 cd furwise
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt && pip install -e . --no-deps
